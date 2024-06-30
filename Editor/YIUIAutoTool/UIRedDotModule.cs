@@ -31,7 +31,7 @@ namespace YIUIFramework.Editor
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public const string UIRedDotKeyAssetPath = "Assets/GameRes/RedDot/RedDotKeyAsset.asset";
+        public const string UIRedDotKeyAssetPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot/RedDotKeyAsset.asset";
 
         [ShowInInspector]
         [ReadOnly]
@@ -47,7 +47,7 @@ namespace YIUIFramework.Editor
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public const string UIRedDotConfigAssetPath = "Assets/GameRes/RedDot/RedDotConfigAsset.asset";
+        public const string UIRedDotConfigAssetPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot/RedDotConfigAsset.asset";
 
         [ShowInInspector]
         [ReadOnly]
