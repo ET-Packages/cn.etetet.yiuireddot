@@ -14,7 +14,7 @@ namespace YIUIFramework.Editor
         public UICreateRedDotKeyCode(out bool result, string authorName, UICreateRedDotKeyData codeData) :
                 base(authorName)
         {
-            var path         = codeData.ClassPath;
+            var path         = $"../{codeData.ClassPath}" ;
             var templatePath = $"Assets/../Packages/cn.etetet.yiuireddot/Editor/RedDot/Template";
             var template     = $"{templatePath}/UICreateRedDotKeyTemplate.txt";
             CreateVo = new CreateVo(template, path);
