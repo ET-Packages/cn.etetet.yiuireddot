@@ -9,6 +9,11 @@ namespace YIUIFramework
     {
         private static List<int> m_AllRedDotKey;
 
+        /// <summary>
+        /// 反射获取枚举列表
+        /// 注意: 运行时使用的是ET编译过的dll
+        /// 如果新增了没有编译 则无法获取到最新数据 请注意一定要编译后运行
+        /// </summary>
         public static List<int> GetKeys(bool force = false)
         {
             if (m_AllRedDotKey != null && !force)
