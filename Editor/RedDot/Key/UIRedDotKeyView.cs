@@ -78,7 +78,7 @@ namespace YIUIFramework.Editor
             var enumKeyList = GetERedDotKeyTypeList();
             if (m_AllRedDotKey.Count != enumKeyList.Count)
             {
-                UnityTipsHelper.CallBack($"当前配置数据 长度:{m_AllRedDotKey.Count} 与 枚举数据 长度:{enumKeyList.Count}  不一致 请重新生成",
+                UnityTipsHelper.CallBack($"当前配置数据 长度:{m_AllRedDotKey.Count} 与 枚举数据 长度:{enumKeyList.Count}  不一致 请重新生成 或是ET没编译过 没检测到 请检查",
                     CreateKeyEnumClass);
             }
         }

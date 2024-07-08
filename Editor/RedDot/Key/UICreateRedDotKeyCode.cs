@@ -3,7 +3,7 @@ namespace YIUIFramework.Editor
 {
     internal class UICreateRedDotKeyCode : BaseTemplate
     {
-        public override string EventName => "红点系统 key 枚举自动生成";
+        public override string EventName => "红点系统 key 枚举自动生成 (注意请编译ET)";
 
         private         bool m_AutoRefresh = false;
         public override bool AutoRefresh => m_AutoRefresh;
