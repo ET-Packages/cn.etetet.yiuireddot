@@ -23,7 +23,7 @@ namespace YIUIFramework.Editor
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public const string UIRedDotPackagePath = "Assets/../Packages/cn.etetet.yiuireddot";
+        public const string UIRedDotPackagePath = "Packages/cn.etetet.yiuireddot";
 
         private const string UIRedDotAssetFolderPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot";
 
@@ -101,6 +101,7 @@ namespace YIUIFramework.Editor
         private void LoadRedDotKeyAsset()
         {
             m_RedDotKeyAsset = AssetDatabase.LoadAssetAtPath<RedDotKeyAsset>(UIRedDotKeyAssetPath);
+
             if (m_RedDotKeyAsset == null)
             {
                 CreateRedDotKeyAsset();
