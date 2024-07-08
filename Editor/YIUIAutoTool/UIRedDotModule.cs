@@ -19,19 +19,19 @@ namespace YIUIFramework.Editor
         private EnumPrefs<EUIRedDotViewType> m_EUIRedDotViewTypePrefs =
                 new EnumPrefs<EUIRedDotViewType>("AutoUIRedDotModule_EUIRedDotViewTypePrefs", null, EUIRedDotViewType.Key);
 
-        private const string UIRedDotAssetFolderPath = "Assets/GameRes/RedDot";
-
         [LabelText("红点包路径")]
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
         public const string UIRedDotPackagePath = "Assets/../Packages/cn.etetet.yiuireddot";
 
+        private const string UIRedDotAssetFolderPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot";
+
         [LabelText("红点枚举资源路径")]
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public const string UIRedDotKeyAssetPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot/RedDotKeyAsset.asset";
+        public const string UIRedDotKeyAssetPath = UIRedDotAssetFolderPath + "/RedDotKeyAsset.asset";
 
         [ShowInInspector]
         [ReadOnly]
@@ -47,7 +47,7 @@ namespace YIUIFramework.Editor
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public const string UIRedDotConfigAssetPath = UIRedDotPackagePath + "/Assets/GameRes/RedDot/RedDotConfigAsset.asset";
+        public const string UIRedDotConfigAssetPath = UIRedDotAssetFolderPath + "/RedDotConfigAsset.asset";
 
         [ShowInInspector]
         [ReadOnly]
@@ -116,7 +116,7 @@ namespace YIUIFramework.Editor
         {
             m_RedDotKeyAsset = ScriptableObject.CreateInstance<RedDotKeyAsset>();
 
-            var assetFolder = Application.dataPath + UIRedDotAssetFolderPath.Replace("Assets", "");
+            var assetFolder = $"{Application.dataPath}/../{UIRedDotAssetFolderPath}";
             if (!Directory.Exists(assetFolder))
                 Directory.CreateDirectory(assetFolder);
 
@@ -145,7 +145,7 @@ namespace YIUIFramework.Editor
         {
             m_RedDotConfigAsset = ScriptableObject.CreateInstance<RedDotConfigAsset>();
 
-            var assetFolder = Application.dataPath + UIRedDotAssetFolderPath.Replace("Assets", "");
+            var assetFolder = $"{Application.dataPath}/../{UIRedDotAssetFolderPath}";
             if (!Directory.Exists(assetFolder))
                 Directory.CreateDirectory(assetFolder);
 
