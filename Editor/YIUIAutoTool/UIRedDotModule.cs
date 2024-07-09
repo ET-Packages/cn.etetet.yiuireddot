@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace YIUIFramework.Editor
 {
-    [YIUIAutoMenu("红点")]
+    [YIUIAutoMenu("红点", 100000)]
     internal class UIRedDotModule : BaseYIUIToolModule
     {
         private EnumPrefs<EUIRedDotViewType> m_EUIRedDotViewTypePrefs =
