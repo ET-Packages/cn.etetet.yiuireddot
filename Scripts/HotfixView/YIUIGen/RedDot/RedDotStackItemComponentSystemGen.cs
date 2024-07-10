@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 using YIUIFramework;
 using System.Collections.Generic;
 
@@ -21,7 +22,7 @@ namespace ET.Client
         {
             self.UIBind();
         }
-        
+
         private static void UIBind(this RedDotStackItemComponent self)
         {
             self.u_UIBase = self.GetParent<YIUIChild>();

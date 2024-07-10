@@ -1,4 +1,7 @@
-﻿using YIUIFramework;
+﻿using System;
+using UnityEngine;
+using YIUIFramework;
+using System.Collections.Generic;
 
 namespace ET.Client
 {
@@ -7,7 +10,8 @@ namespace ET.Client
     /// 由YIUI工具自动创建 请勿修改
     /// </summary>
     [YIUI(EUICodeType.Common)]
-    public partial class RedDotStackItemComponent: Entity, IDestroy, IAwake, IYIUIBind, IYIUIInitialize
+    [ComponentOf(typeof(YIUIChild))]
+    public partial class RedDotStackItemComponent : Entity, IDestroy, IAwake, IYIUIBind, IYIUIInitialize
     {
         public const string PkgName = "RedDot";
         public const string ResName = "RedDotStackItem";
