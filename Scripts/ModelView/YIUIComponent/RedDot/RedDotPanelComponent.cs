@@ -4,8 +4,8 @@ using YIUIFramework;
 
 namespace ET.Client
 {
-    public partial class RedDotPanelComponent : Entity, IYIUIEvent<OnClickParentListEvent>, IYIUIEvent<OnClickChildListEvent>,
-            IYIUIEvent<OnClickItemEvent>
+    public partial class RedDotPanelComponent : Entity, IDynamicEvent<OnClickParentListEvent>, IDynamicEvent<OnClickChildListEvent>,
+            IDynamicEvent<OnClickItemEvent>
     {
         public YIUILoopScroll<RedDotData, RedDotDataItemComponent>   m_SearchScroll;
         public List<RedDotData>                                      m_CurrentDataList      = new();

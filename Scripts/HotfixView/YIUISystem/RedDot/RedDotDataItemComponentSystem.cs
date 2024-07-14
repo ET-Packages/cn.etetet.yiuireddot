@@ -38,17 +38,17 @@ namespace ET.Client
 
         private static void OnEventParentAction(this RedDotDataItemComponent self)
         {
-            self.Fiber().UIEvent(new OnClickParentListEvent() { Data = self.m_Data }).NoContext();
+            self.DynamicEvent(new OnClickParentListEvent() { Data = self.m_Data }).NoContext();
         }
 
         private static void OnEventClickItemAction(this RedDotDataItemComponent self)
         {
-            self.Fiber().UIEvent(new OnClickItemEvent { Data = self.m_Data }).NoContext();
+            self.DynamicEvent(new OnClickItemEvent { Data = self.m_Data }).NoContext();
         }
 
         private static void OnEventChildAction(this RedDotDataItemComponent self)
         {
-            self.Fiber().UIEvent(new OnClickChildListEvent { Data = self.m_Data }).NoContext();
+            self.DynamicEvent(new OnClickChildListEvent { Data = self.m_Data }).NoContext();
         }
         #endregion YIUIEvent结束
     }

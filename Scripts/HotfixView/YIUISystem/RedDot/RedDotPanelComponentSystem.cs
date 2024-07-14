@@ -32,21 +32,21 @@ namespace ET.Client
         }
 
         [EntitySystem]
-        private static async ETTask YIUIEvent(this RedDotPanelComponent self, OnClickParentListEvent message)
+        private static async ETTask DynamicEvent(this RedDotPanelComponent self, OnClickParentListEvent message)
         {
             await ETTask.CompletedTask;
             self.OnClickParentList(message.Data);
         }
 
         [EntitySystem]
-        private static async ETTask YIUIEvent(this RedDotPanelComponent self, OnClickChildListEvent message)
+        private static async ETTask DynamicEvent(this RedDotPanelComponent self, OnClickChildListEvent message)
         {
             await ETTask.CompletedTask;
             self.OnClickChildList(message.Data);
         }
 
         [EntitySystem]
-        private static async ETTask YIUIEvent(this RedDotPanelComponent self, OnClickItemEvent message)
+        private static async ETTask DynamicEvent(this RedDotPanelComponent self, OnClickItemEvent message)
         {
             await ETTask.CompletedTask;
             self.OnClickItem(message.Data);
