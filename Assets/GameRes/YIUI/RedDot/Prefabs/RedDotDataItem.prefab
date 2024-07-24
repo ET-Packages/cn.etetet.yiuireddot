@@ -119,14 +119,14 @@ MonoBehaviour:
       Data: u_EventTips
     - Name: m_UIEvent
       Entry: 7
-      Data: 0|YIUIFramework.UIEventP1`1[[System.Boolean, mscorlib]], YIUIFramework
+      Data: 0|YIUIFramework.UIEventP1`1[[System.Boolean, mscorlib]], ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventTips
     - Name: AllEventParamType
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
@@ -141,7 +141,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
       Data: 3|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+      Data: YIUIFramework.UIBindEventTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -162,7 +162,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -177,7 +177,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIEventBase, YIUIFramework
+      Data: YIUIFramework.UIEventBase, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -192,7 +192,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -236,7 +236,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -255,10 +255,10 @@ MonoBehaviour:
       Data: u_DataTips
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataTips
@@ -267,7 +267,7 @@ MonoBehaviour:
       Data: -662166118
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -276,7 +276,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -285,7 +285,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -297,7 +297,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -312,7 +312,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -327,7 +327,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -358,14 +358,14 @@ MonoBehaviour:
       Data: 
     - Name: m_Datas
       Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+      Data: 12|YIUIFramework.UIDataBoolRef, ET.YIUIFramework
     - Name: m_Data
       Entry: 9
       Data: 3
@@ -374,7 +374,7 @@ MonoBehaviour:
       Data: 2
     - Name: m_ReferenceData
       Entry: 7
-      Data: 13|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 13|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -422,7 +422,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -441,10 +441,10 @@ MonoBehaviour:
       Data: u_DataSwitchTips
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataSwitchTips
@@ -453,7 +453,7 @@ MonoBehaviour:
       Data: -1264696948
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -462,7 +462,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -483,7 +483,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -513,7 +513,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -544,14 +544,14 @@ MonoBehaviour:
       Data: 
     - Name: m_Datas
       Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+      Data: 12|YIUIFramework.UIDataBoolRef, ET.YIUIFramework
     - Name: m_Data
       Entry: 9
       Data: 3
@@ -560,7 +560,7 @@ MonoBehaviour:
       Data: 2
     - Name: m_ReferenceData
       Entry: 7
-      Data: 13|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 13|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -745,7 +745,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -764,10 +764,10 @@ MonoBehaviour:
       Data: u_DataCount
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataCount
@@ -776,7 +776,7 @@ MonoBehaviour:
       Data: -1210984365
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -785,7 +785,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -794,7 +794,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -806,7 +806,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -821,7 +821,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -836,7 +836,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -1033,7 +1033,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -1052,10 +1052,10 @@ MonoBehaviour:
       Data: u_DataChildCount
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataChildCount
@@ -1064,7 +1064,7 @@ MonoBehaviour:
       Data: 568797544
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -1073,7 +1073,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -1082,7 +1082,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1094,7 +1094,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -1109,7 +1109,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1124,7 +1124,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -1330,14 +1330,14 @@ MonoBehaviour:
       Data: u_EventChild
     - Name: m_UIEvent
       Entry: 7
-      Data: 0|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 0|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventChild
     - Name: AllEventParamType
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -1349,7 +1349,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -1358,7 +1358,7 @@ MonoBehaviour:
       Data: 3|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+      Data: YIUIFramework.UIBindEventTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1370,7 +1370,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -1385,7 +1385,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIEventBase, YIUIFramework
+      Data: YIUIFramework.UIEventBase, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1400,7 +1400,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -1581,7 +1581,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -1600,10 +1600,10 @@ MonoBehaviour:
       Data: u_DataName
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataName
@@ -1612,7 +1612,7 @@ MonoBehaviour:
       Data: 733612731
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueString, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueString, ET.YIUIFramework
     - Name: m_Value
       Entry: 6
       Data: 
@@ -1621,7 +1621,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -1630,7 +1630,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1642,7 +1642,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -1657,7 +1657,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1672,7 +1672,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -1810,7 +1810,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -1829,10 +1829,10 @@ MonoBehaviour:
       Data: u_DataShowType
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataShowType
@@ -1841,7 +1841,7 @@ MonoBehaviour:
       Data: -447152418
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: false
@@ -1850,7 +1850,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -1859,7 +1859,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1871,7 +1871,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -1886,7 +1886,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -1901,7 +1901,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -1935,14 +1935,14 @@ MonoBehaviour:
       Data: 
     - Name: m_Datas
       Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+      Data: 12|YIUIFramework.UIDataBoolRef, ET.YIUIFramework
     - Name: m_Data
       Entry: 9
       Data: 3
@@ -1951,7 +1951,7 @@ MonoBehaviour:
       Data: 2
     - Name: m_ReferenceData
       Entry: 7
-      Data: 13|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 13|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: false
@@ -2145,14 +2145,14 @@ MonoBehaviour:
       Data: u_EventParent
     - Name: m_UIEvent
       Entry: 7
-      Data: 0|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 0|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventParent
     - Name: AllEventParamType
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -2164,7 +2164,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2173,7 +2173,7 @@ MonoBehaviour:
       Data: 3|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+      Data: YIUIFramework.UIBindEventTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -2185,7 +2185,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -2200,7 +2200,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIEventBase, YIUIFramework
+      Data: YIUIFramework.UIEventBase, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -2215,7 +2215,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2326,7 +2326,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: AllChildCdeTable
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[YIUIFramework.UIBindCDETable, YIUIFramework]],
+      Data: 0|System.Collections.Generic.List`1[[YIUIFramework.UIBindCDETable, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2337,32 +2337,15 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-    - Name: m_AllChildUIOwner
-      Entry: 7
-      Data: 1|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[ET.Entity,
-        Unity.Core]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 2|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+    - Name: m_PackagesName
+      Entry: 1
+      Data: yiuireddot
     - Name: IsSplitData
       Entry: 5
       Data: false
     - Name: PanelSplitData
       Entry: 7
-      Data: 3|YIUIFramework.UIPanelSplitData, YIUIFramework
+      Data: 1|YIUIFramework.UIPanelSplitData, ET.YIUIFramework
     - Name: Panel
       Entry: 6
       Data: 
@@ -2371,7 +2354,7 @@ MonoBehaviour:
       Data: 
     - Name: AllCommonView
       Entry: 7
-      Data: 4|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+      Data: 2|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2384,7 +2367,7 @@ MonoBehaviour:
       Data: 
     - Name: AllCreateView
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+      Data: 3|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2400,7 +2383,7 @@ MonoBehaviour:
       Data: 
     - Name: AllPopupView
       Entry: 7
-      Data: 6|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
+      Data: 4|System.Collections.Generic.List`1[[UnityEngine.RectTransform, UnityEngine.CoreModule]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2468,7 +2451,7 @@ MonoBehaviour:
     - Name: m_DataDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIData,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -2487,7 +2470,7 @@ MonoBehaviour:
       Data: u_DataKeyId
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIData, YIUIFramework
+      Data: 2|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataKeyId
@@ -2496,7 +2479,7 @@ MonoBehaviour:
       Data: 875673427
     - Name: m_DataValue
       Entry: 7
-      Data: 3|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 3|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -2505,7 +2488,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 4|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 4|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2514,7 +2497,7 @@ MonoBehaviour:
       Data: 5|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -2526,7 +2509,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -2541,7 +2524,7 @@ MonoBehaviour:
       Data: 8|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -2556,7 +2539,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2584,7 +2567,7 @@ MonoBehaviour:
       Data: u_DataCount
     - Name: $v
       Entry: 7
-      Data: 10|YIUIFramework.UIData, YIUIFramework
+      Data: 10|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataCount
@@ -2593,7 +2576,7 @@ MonoBehaviour:
       Data: -1210984365
     - Name: m_DataValue
       Entry: 7
-      Data: 11|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 11|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -2602,7 +2585,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 12|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 12|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2635,7 +2618,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 14|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2663,7 +2646,7 @@ MonoBehaviour:
       Data: u_DataName
     - Name: $v
       Entry: 7
-      Data: 15|YIUIFramework.UIData, YIUIFramework
+      Data: 15|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataName
@@ -2672,7 +2655,7 @@ MonoBehaviour:
       Data: 733612731
     - Name: m_DataValue
       Entry: 7
-      Data: 16|YIUIFramework.UIDataValueString, YIUIFramework
+      Data: 16|YIUIFramework.UIDataValueString, ET.YIUIFramework
     - Name: m_Value
       Entry: 6
       Data: 
@@ -2681,7 +2664,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 17|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 17|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2714,7 +2697,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 19|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 19|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2742,7 +2725,7 @@ MonoBehaviour:
       Data: u_DataTips
     - Name: $v
       Entry: 7
-      Data: 20|YIUIFramework.UIData, YIUIFramework
+      Data: 20|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataTips
@@ -2751,7 +2734,7 @@ MonoBehaviour:
       Data: -662166118
     - Name: m_DataValue
       Entry: 7
-      Data: 21|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 21|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -2760,7 +2743,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 22|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 22|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2793,7 +2776,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 24|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 24|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2821,7 +2804,7 @@ MonoBehaviour:
       Data: u_DataParentCount
     - Name: $v
       Entry: 7
-      Data: 25|YIUIFramework.UIData, YIUIFramework
+      Data: 25|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataParentCount
@@ -2830,7 +2813,7 @@ MonoBehaviour:
       Data: -1304037620
     - Name: m_DataValue
       Entry: 7
-      Data: 26|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 26|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -2839,7 +2822,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 27|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 27|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2872,7 +2855,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 29|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 29|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2900,7 +2883,7 @@ MonoBehaviour:
       Data: u_DataChildCount
     - Name: $v
       Entry: 7
-      Data: 30|YIUIFramework.UIData, YIUIFramework
+      Data: 30|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataChildCount
@@ -2909,7 +2892,7 @@ MonoBehaviour:
       Data: 568797544
     - Name: m_DataValue
       Entry: 7
-      Data: 31|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 31|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -2918,7 +2901,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 32|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 32|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -2951,7 +2934,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 34|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 34|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -2979,7 +2962,7 @@ MonoBehaviour:
       Data: u_DataShowType
     - Name: $v
       Entry: 7
-      Data: 35|YIUIFramework.UIData, YIUIFramework
+      Data: 35|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataShowType
@@ -2988,7 +2971,7 @@ MonoBehaviour:
       Data: -447152418
     - Name: m_DataValue
       Entry: 7
-      Data: 36|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 36|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: false
@@ -2997,7 +2980,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 37|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 37|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3030,7 +3013,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 39|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 39|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3061,7 +3044,7 @@ MonoBehaviour:
       Data: u_DataSwitchTips
     - Name: $v
       Entry: 7
-      Data: 40|YIUIFramework.UIData, YIUIFramework
+      Data: 40|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataSwitchTips
@@ -3070,7 +3053,7 @@ MonoBehaviour:
       Data: -1264696948
     - Name: m_DataValue
       Entry: 7
-      Data: 41|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 41|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: true
@@ -3079,7 +3062,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 42|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 42|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3112,7 +3095,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 44|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 44|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3167,7 +3150,7 @@ MonoBehaviour:
     - Name: m_EventDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIEventBase,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -3186,14 +3169,14 @@ MonoBehaviour:
       Data: u_EventChild
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 2|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventChild
     - Name: AllEventParamType
       Entry: 7
       Data: 3|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -3205,7 +3188,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 4|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 4|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3214,7 +3197,7 @@ MonoBehaviour:
       Data: 5|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+      Data: YIUIFramework.UIBindEventTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -3226,7 +3209,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -3241,7 +3224,7 @@ MonoBehaviour:
       Data: 8|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIEventBase, YIUIFramework
+      Data: YIUIFramework.UIEventBase, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -3256,7 +3239,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 9|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3284,14 +3267,14 @@ MonoBehaviour:
       Data: u_EventClickItem
     - Name: $v
       Entry: 7
-      Data: 10|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 10|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventClickItem
     - Name: AllEventParamType
       Entry: 7
       Data: 11|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -3303,7 +3286,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 12|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 12|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3336,7 +3319,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 14|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3364,14 +3347,14 @@ MonoBehaviour:
       Data: u_EventParent
     - Name: $v
       Entry: 7
-      Data: 15|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 15|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventParent
     - Name: AllEventParamType
       Entry: 7
       Data: 16|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -3383,7 +3366,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 17|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 17|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3416,7 +3399,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 19|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 19|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3444,14 +3427,14 @@ MonoBehaviour:
       Data: u_EventTips
     - Name: $v
       Entry: 7
-      Data: 20|YIUIFramework.UIEventP1`1[[System.Boolean, mscorlib]], YIUIFramework
+      Data: 20|YIUIFramework.UIEventP1`1[[System.Boolean, mscorlib]], ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventTips
     - Name: AllEventParamType
       Entry: 7
       Data: 21|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 1
@@ -3466,7 +3449,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 22|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 22|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3499,7 +3482,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 24|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 24|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3528,7 +3511,7 @@ MonoBehaviour:
     - Name: AllEventParamType
       Entry: 7
       Data: 25|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -3642,7 +3625,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -3661,10 +3644,10 @@ MonoBehaviour:
       Data: u_DataShowType
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataShowType
@@ -3673,7 +3656,7 @@ MonoBehaviour:
       Data: -447152418
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: false
@@ -3682,7 +3665,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -3691,7 +3674,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -3703,7 +3686,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -3718,7 +3701,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -3733,7 +3716,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -3767,14 +3750,14 @@ MonoBehaviour:
       Data: 
     - Name: m_Datas
       Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, YIUIFramework]],
+      Data: 11|System.Collections.Generic.List`1[[YIUIFramework.UIDataBoolRef, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 12|YIUIFramework.UIDataBoolRef, YIUIFramework
+      Data: 12|YIUIFramework.UIDataBoolRef, ET.YIUIFramework
     - Name: m_Data
       Entry: 9
       Data: 3
@@ -3783,7 +3766,7 @@ MonoBehaviour:
       Data: 2
     - Name: m_ReferenceData
       Entry: 7
-      Data: 13|YIUIFramework.UIDataValueBool, YIUIFramework
+      Data: 13|YIUIFramework.UIDataValueBool, ET.YIUIFramework
     - Name: m_Value
       Entry: 5
       Data: false
@@ -4043,7 +4026,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -4062,10 +4045,10 @@ MonoBehaviour:
       Data: u_DataKeyId
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataKeyId
@@ -4074,7 +4057,7 @@ MonoBehaviour:
       Data: 875673427
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -4083,7 +4066,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -4092,7 +4075,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4104,7 +4087,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -4119,7 +4102,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4134,7 +4117,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -4376,14 +4359,14 @@ MonoBehaviour:
       Data: u_EventClickItem
     - Name: m_UIEvent
       Entry: 7
-      Data: 0|YIUIFramework.UIEventP0, YIUIFramework
+      Data: 0|YIUIFramework.UIEventP0, ET.YIUIFramework
     - Name: m_EventName
       Entry: 1
       Data: u_EventClickItem
     - Name: AllEventParamType
       Entry: 7
       Data: 1|System.Collections.Generic.List`1[[YIUIFramework.EUIEventParamType,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 12
       Data: 0
@@ -4395,7 +4378,7 @@ MonoBehaviour:
       Data: 
     - Name: OnRemoveAction
       Entry: 7
-      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: 2|System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -4404,7 +4387,7 @@ MonoBehaviour:
       Data: 3|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindEventTable, YIUIFramework
+      Data: YIUIFramework.UIBindEventTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4416,7 +4399,7 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIEventBase, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIEventBase, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -4431,7 +4414,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIEventBase, YIUIFramework
+      Data: YIUIFramework.UIEventBase, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4446,7 +4429,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, YIUIFramework]],
+      Data: 7|System.Collections.Generic.List`1[[YIUIFramework.UIEventBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
@@ -4627,7 +4610,7 @@ MonoBehaviour:
     - Name: m_DataSelectDic
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[YIUIFramework.UIDataSelect,
-        YIUIFramework]], mscorlib
+        ET.YIUIFramework]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -4646,10 +4629,10 @@ MonoBehaviour:
       Data: u_DataParentCount
     - Name: $v
       Entry: 7
-      Data: 2|YIUIFramework.UIDataSelect, YIUIFramework
+      Data: 2|YIUIFramework.UIDataSelect, ET.YIUIFramework
     - Name: m_Data
       Entry: 7
-      Data: 3|YIUIFramework.UIData, YIUIFramework
+      Data: 3|YIUIFramework.UIData, ET.YIUIFramework
     - Name: m_Name
       Entry: 1
       Data: u_DataParentCount
@@ -4658,7 +4641,7 @@ MonoBehaviour:
       Data: -1304037620
     - Name: m_DataValue
       Entry: 7
-      Data: 4|YIUIFramework.UIDataValueInt, YIUIFramework
+      Data: 4|YIUIFramework.UIDataValueInt, ET.YIUIFramework
     - Name: m_Value
       Entry: 3
       Data: 0
@@ -4667,7 +4650,7 @@ MonoBehaviour:
       Data: 
     - Name: OnDataRemoveAction
       Entry: 7
-      Data: 5|System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: 5|System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: target
       Entry: 10
       Data: 0
@@ -4676,7 +4659,7 @@ MonoBehaviour:
       Data: 6|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIBindDataTable, YIUIFramework
+      Data: YIUIFramework.UIBindDataTable, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4688,7 +4671,7 @@ MonoBehaviour:
       Data: 7|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: System.Action`1[[YIUIFramework.UIData, YIUIFramework]], mscorlib
+      Data: System.Action`1[[YIUIFramework.UIData, ET.YIUIFramework]], mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -4703,7 +4686,7 @@ MonoBehaviour:
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: YIUIFramework.UIData, YIUIFramework
+      Data: YIUIFramework.UIData, ET.YIUIFramework
     - Name: 
       Entry: 8
       Data: 
@@ -4718,7 +4701,7 @@ MonoBehaviour:
       Data: 
     - Name: m_Binds
       Entry: 7
-      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, YIUIFramework]],
+      Data: 10|System.Collections.Generic.List`1[[YIUIFramework.UIDataBind, ET.YIUIFramework]],
         mscorlib
     - Name: 
       Entry: 12
