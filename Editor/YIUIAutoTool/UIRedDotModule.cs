@@ -16,6 +16,13 @@ namespace YIUIFramework.Editor
     [YIUIAutoMenu("红点", 100000)]
     internal class UIRedDotModule : BaseYIUIToolModule
     {
+        [Button("文档", 30, Icon = SdfIconType.Link45deg, IconAlignment = IconAlignment.LeftOfText)]
+        [PropertyOrder(-99999)]
+        public void OpenDocument()
+        {
+            Application.OpenURL("https://lib9kmxvq7k.feishu.cn/wiki/XzyawmryHitNVNk9QVtcDAftn5O");
+        }
+
         private EnumPrefs<EUIRedDotViewType> m_EUIRedDotViewTypePrefs =
                 new EnumPrefs<EUIRedDotViewType>("AutoUIRedDotModule_EUIRedDotViewTypePrefs", null, EUIRedDotViewType.Key);
 

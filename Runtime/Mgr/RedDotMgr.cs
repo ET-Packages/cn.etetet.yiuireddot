@@ -14,6 +14,7 @@ namespace YIUIFramework
 {
     /// <summary>
     /// 红点 管理器
+    /// 文档: https://lib9kmxvq7k.feishu.cn/wiki/XzyawmryHitNVNk9QVtcDAftn5O
     /// </summary>
     [YIUISingleton(1000)]
     public partial class RedDotMgr : YIUISingleton<RedDotMgr>

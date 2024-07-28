@@ -5,6 +5,9 @@ using YIUIFramework;
 
 namespace ET.Client
 {
+    /// <summary>
+    /// 文档: https://lib9kmxvq7k.feishu.cn/wiki/XzyawmryHitNVNk9QVtcDAftn5O
+    /// </summary>
     //主要用于在GM包上测试功能
     //当前包没有强制引用GM包
     //如果没有引用GM包  请删除这个文件

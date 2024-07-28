@@ -4,6 +4,9 @@ using YIUIFramework;
 
 namespace ET.Client
 {
+    /// <summary>
+    /// 文档: https://lib9kmxvq7k.feishu.cn/wiki/XzyawmryHitNVNk9QVtcDAftn5O
+    /// </summary>
     public partial class RedDotPanelComponent : Entity, IDynamicEvent<OnClickParentListEvent>, IDynamicEvent<OnClickChildListEvent>,
             IDynamicEvent<OnClickItemEvent>
     {
