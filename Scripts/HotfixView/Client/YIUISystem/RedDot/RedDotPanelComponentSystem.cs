@@ -8,8 +8,8 @@ namespace ET.Client
     /// <summary>
     /// 文档: https://lib9kmxvq7k.feishu.cn/wiki/XzyawmryHitNVNk9QVtcDAftn5O
     /// </summary>
-    [FriendOf(typeof (RedDotPanelComponent))]
-    [FriendOf(typeof (RedDotStackItemComponent))]
+    [FriendOf(typeof(RedDotPanelComponent))]
+    [FriendOf(typeof(RedDotStackItemComponent))]
     public static partial class RedDotPanelComponentSystem
     {
         [EntitySystem]
@@ -17,7 +17,7 @@ namespace ET.Client
         {
             self.RemoveInfoChanged();
             self.InitInfo();
-            self.m_SearchScroll = new YIUILoopScroll<RedDotData, RedDotDataItemComponent>(self, self.u_ComSearchScroll, self.SearchRenderer);
+            self.m_SearchScroll = new YIUILoopScroll<RedDotData>(self, self.u_ComSearchScroll, typeof(RedDotDataItemComponent));
             self.InitDropdownSearchDic();
         }
 
@@ -57,9 +57,13 @@ namespace ET.Client
 
         #region Search
 
-        private static void SearchRenderer(this RedDotPanelComponent self, int index, RedDotData data, RedDotDataItemComponent item, bool select)
+        [YIUILoopRenderer]
+        public class RedDotPanelComponentLoopRendererSystem : YIUILoopRendererSystem<RedDotPanelComponent, RedDotDataItemComponent, RedDotData>
         {
-            item.RefreshData(data);
+            protected override void Renderer(RedDotPanelComponent self, int index, RedDotDataItemComponent item, RedDotData data, bool select)
+            {
+                item.RefreshData(data);
+            }
         }
 
         private static void InitDropdownSearchDic(this RedDotPanelComponent self)
@@ -136,7 +140,7 @@ namespace ET.Client
 
         private static void InitInfo(this RedDotPanelComponent self)
         {
-            self.m_StackScroll = new YIUILoopScroll<RedDotStack, RedDotStackItemComponent>(self, self.u_ComStackScroll, self.StackRenderer);
+            self.m_StackScroll = new YIUILoopScroll<RedDotStack>(self, self.u_ComStackScroll, typeof(RedDotStackItemComponent));
             self.u_DataToggleUnityEngine.SetValue(RedDotStackHelper.StackHideUnityEngine);
             self.u_DataToggleYIUIFramework.SetValue(RedDotStackHelper.StackHideYIUIFramework);
             self.u_DataToggleYIUIBind.SetValue(RedDotStackHelper.StackHideYIUIBind);
@@ -145,14 +149,20 @@ namespace ET.Client
             self.u_DataToggleShowFilePath.SetValue(RedDotStackHelper.ShowFilePath);
         }
 
-        private static void StackRenderer(this RedDotPanelComponent self, int index, RedDotStack data, RedDotStackItemComponent item, bool select)
+        [YIUILoopRenderer]
+        [FriendOf(typeof(RedDotPanelComponent))]
+        [FriendOf(typeof(RedDotStackItemComponent))]
+        public class RedDotPanelComponent2LoopRendererSystem : YIUILoopRendererSystem<RedDotPanelComponent, RedDotStackItemComponent, RedDotStack>
         {
-            item.u_DataId.SetValue(data.Id);
-            item.u_DataTime.SetValue(data.GetTime());
-            item.u_DataOs.SetValue(data.GetOS(self.m_InfoData));
-            item.u_DataSource.SetValue(data.GetSource());
-            item.u_DataShowStack.SetValue(false);
-            item.RedDotStackData = data;
+            protected override void Renderer(RedDotPanelComponent self, int index, RedDotStackItemComponent item, RedDotStack data, bool select)
+            {
+                item.u_DataId.SetValue(data.Id);
+                item.u_DataTime.SetValue(data.GetTime());
+                item.u_DataOs.SetValue(data.GetOS(self.m_InfoData));
+                item.u_DataSource.SetValue(data.GetSource());
+                item.u_DataShowStack.SetValue(false);
+                item.RedDotStackData = data;
+            }
         }
 
         private static void ResetStackInfo(this RedDotPanelComponent self, RedDotData data)
@@ -219,7 +229,7 @@ namespace ET.Client
             {
                 return;
             }
-            
+
             var result = int.TryParse(p1, out int key);
             if (!result)
             {
