@@ -58,13 +58,10 @@ namespace ET.Client
 
         #region Search
 
-        [YIUILoopRenderer]
-        public class RedDotPanelComponentLoopRendererSystem : YIUILoopRendererSystem<RedDotPanelComponent, RedDotDataItemComponent, RedDotData>
+        [EntitySystem]
+        private static void YIUILoopRenderer(this RedDotPanelComponent self, RedDotDataItemComponent item, RedDotData data, int index, bool select)
         {
-            protected override void Renderer(RedDotPanelComponent self, int index, RedDotDataItemComponent item, RedDotData data, bool select)
-            {
-                item.RefreshData(data);
-            }
+            item.RefreshData(data);
         }
 
         private static void InitDropdownSearchDic(this RedDotPanelComponent self)
@@ -150,20 +147,15 @@ namespace ET.Client
             self.u_DataToggleShowFilePath.SetValue(RedDotStackHelper.ShowFilePath);
         }
 
-        [YIUILoopRenderer]
-        [FriendOf(typeof(RedDotPanelComponent))]
-        [FriendOf(typeof(RedDotStackItemComponent))]
-        public class RedDotPanelComponent2LoopRendererSystem : YIUILoopRendererSystem<RedDotPanelComponent, RedDotStackItemComponent, RedDotStack>
+        [EntitySystem]
+        private static void YIUILoopRenderer(this RedDotPanelComponent self, RedDotStackItemComponent item, RedDotStack data, int index, bool select)
         {
-            protected override void Renderer(RedDotPanelComponent self, int index, RedDotStackItemComponent item, RedDotStack data, bool select)
-            {
-                item.u_DataId.SetValue(data.Id);
-                item.u_DataTime.SetValue(data.GetTime());
-                item.u_DataOs.SetValue(data.GetOS(self.m_InfoData));
-                item.u_DataSource.SetValue(data.GetSource());
-                item.u_DataShowStack.SetValue(false);
-                item.RedDotStackData = data;
-            }
+            item.u_DataId.SetValue(data.Id);
+            item.u_DataTime.SetValue(data.GetTime());
+            item.u_DataOs.SetValue(data.GetOS(self.m_InfoData));
+            item.u_DataSource.SetValue(data.GetSource());
+            item.u_DataShowStack.SetValue(false);
+            item.RedDotStackData = data;
         }
 
         private static void ResetStackInfo(this RedDotPanelComponent self, RedDotData data)
