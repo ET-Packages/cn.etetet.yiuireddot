@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace ET.Client
 {
-    [FriendOf(typeof (RedDotDataItemComponent))]
+    [FriendOf(typeof(RedDotDataItemComponent))]
     public static partial class RedDotDataItemComponentSystem
     {
         [EntitySystem]
@@ -19,7 +19,7 @@ namespace ET.Client
 
         public static void RefreshData(this RedDotDataItemComponent self, RedDotData data)
         {
-            self.m_Data        = data;
+            self.m_Data = data;
             self.u_DataCount.SetValue(data.Count);
             self.u_DataName.SetValue(RedDotMgr.Inst.GetKeyDes(data.Key));
             self.u_DataTips.SetValue(data.Tips);
@@ -31,25 +31,30 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-        private static void OnEventTipsAction(this RedDotDataItemComponent self, bool p1)
+        [YIUIInvoke]
+        private static void OnEventTipsInvoke(this RedDotDataItemComponent self, bool p1)
         {
             RedDotMgr.Inst.SetTips(self.m_Data.Key, p1);
         }
 
-        private static void OnEventParentAction(this RedDotDataItemComponent self)
+        [YIUIInvoke]
+        private static void OnEventParentInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickParentListEvent() { Data = self.m_Data }).NoContext();
         }
 
-        private static void OnEventClickItemAction(this RedDotDataItemComponent self)
+        [YIUIInvoke]
+        private static void OnEventClickItemInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickItemEvent { Data = self.m_Data }).NoContext();
         }
 
-        private static void OnEventChildAction(this RedDotDataItemComponent self)
+        [YIUIInvoke]
+        private static void OnEventChildInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickChildListEvent { Data = self.m_Data }).NoContext();
         }
+
         #endregion YIUIEvent结束
     }
 }

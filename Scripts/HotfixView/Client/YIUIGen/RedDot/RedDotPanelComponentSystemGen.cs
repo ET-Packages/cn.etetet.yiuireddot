@@ -50,25 +50,25 @@ namespace ET.Client
             self.u_DataToggleShowFileName = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataToggleShowFileName");
             self.u_DataToggleShowFilePath = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataToggleShowFilePath");
             self.u_EventChangeCount = self.UIBase.EventTable.FindEvent<UIEventP1<string>>("u_EventChangeCount");
-            self.u_EventChangeCountHandle = self.u_EventChangeCount.Add(self.OnEventChangeCountAction);
+            self.u_EventChangeCountHandle = self.u_EventChangeCount.Add(self,"OnEventChangeCountInvoke");
             self.u_EventChangeToggleShowFileName = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowFileName");
-            self.u_EventChangeToggleShowFileNameHandle = self.u_EventChangeToggleShowFileName.Add(self.OnEventChangeToggleShowFileNameAction);
+            self.u_EventChangeToggleShowFileNameHandle = self.u_EventChangeToggleShowFileName.Add(self,"OnEventChangeToggleShowFileNameInvoke");
             self.u_EventChangeToggleShowFilePath = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowFilePath");
-            self.u_EventChangeToggleShowFilePathHandle = self.u_EventChangeToggleShowFilePath.Add(self.OnEventChangeToggleShowFilePathAction);
+            self.u_EventChangeToggleShowFilePathHandle = self.u_EventChangeToggleShowFilePath.Add(self,"OnEventChangeToggleShowFilePathInvoke");
             self.u_EventChangeToggleShowStackIndex = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowStackIndex");
-            self.u_EventChangeToggleShowStackIndexHandle = self.u_EventChangeToggleShowStackIndex.Add(self.OnEventChangeToggleShowStackIndexAction);
+            self.u_EventChangeToggleShowStackIndexHandle = self.u_EventChangeToggleShowStackIndex.Add(self,"OnEventChangeToggleShowStackIndexInvoke");
             self.u_EventChangeToggleUnityEngine = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleUnityEngine");
-            self.u_EventChangeToggleUnityEngineHandle = self.u_EventChangeToggleUnityEngine.Add(self.OnEventChangeToggleUnityEngineAction);
+            self.u_EventChangeToggleUnityEngineHandle = self.u_EventChangeToggleUnityEngine.Add(self,"OnEventChangeToggleUnityEngineInvoke");
             self.u_EventChangeToggleYIUIBind = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleYIUIBind");
-            self.u_EventChangeToggleYIUIBindHandle = self.u_EventChangeToggleYIUIBind.Add(self.OnEventChangeToggleYIUIBindAction);
+            self.u_EventChangeToggleYIUIBindHandle = self.u_EventChangeToggleYIUIBind.Add(self,"OnEventChangeToggleYIUIBindInvoke");
             self.u_EventChangeToggleYIUIFramework = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleYIUIFramework");
-            self.u_EventChangeToggleYIUIFrameworkHandle = self.u_EventChangeToggleYIUIFramework.Add(self.OnEventChangeToggleYIUIFrameworkAction);
+            self.u_EventChangeToggleYIUIFrameworkHandle = self.u_EventChangeToggleYIUIFramework.Add(self,"OnEventChangeToggleYIUIFrameworkInvoke");
             self.u_EventClose = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventClose");
-            self.u_EventCloseHandle = self.u_EventClose.Add(self.OnEventCloseAction);
+            self.u_EventCloseHandle = self.u_EventClose.Add(self,"OnEventCloseInvoke");
             self.u_EventDropdownSearch = self.UIBase.EventTable.FindEvent<UIEventP1<int>>("u_EventDropdownSearch");
-            self.u_EventDropdownSearchHandle = self.u_EventDropdownSearch.Add(self.OnEventDropdownSearchAction);
+            self.u_EventDropdownSearchHandle = self.u_EventDropdownSearch.Add(self,"OnEventDropdownSearchInvoke");
             self.u_EventInputSearchEnd = self.UIBase.EventTable.FindEvent<UIEventP1<string>>("u_EventInputSearchEnd");
-            self.u_EventInputSearchEndHandle = self.u_EventInputSearchEnd.Add(self.OnEventInputSearchEndAction);
+            self.u_EventInputSearchEndHandle = self.u_EventInputSearchEnd.Add(self,"OnEventInputSearchEndInvoke");
 
         }
     }

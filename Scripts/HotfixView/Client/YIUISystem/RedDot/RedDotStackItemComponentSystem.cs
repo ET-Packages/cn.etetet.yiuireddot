@@ -18,11 +18,13 @@ namespace ET.Client
         }
 
         #region YIUIEvent开始
-        
-        private static void OnEventShowStackAction(this RedDotStackItemComponent self)
+
+        [YIUIInvoke]
+        private static void OnEventShowStackInvoke(this RedDotStackItemComponent self)
         {
             self.u_ComStackText.text = self.RedDotStackData?.GetStackContent() ?? "";
         }
+
         #endregion YIUIEvent结束
     }
 }
