@@ -27,7 +27,7 @@ namespace ET.Client
         {
             self.u_UIBase = self.GetParent<YIUIChild>();
 
-            self.u_ComStackText = self.UIBase.ComponentTable.FindComponent<TMPro.TextMeshProUGUI>("u_ComStackText");
+            self.u_ComStackText = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.Text>("u_ComStackText");
             self.u_DataShowStack = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataShowStack");
             self.u_DataId = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueInt>("u_DataId");
             self.u_DataTime = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataTime");

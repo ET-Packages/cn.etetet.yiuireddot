@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using TMPro;
+using UnityEngine.UI;
 using YIUIFramework;
 
 namespace ET.Client
@@ -17,7 +17,7 @@ namespace ET.Client
 
         public List<RedDotData>              m_CurrentDataList      = new();
         public Dictionary<int, int>          m_AllDropdownSearchDic = new();
-        public List<TMP_Dropdown.OptionData> m_DropdownOptionData   = new();
+        public List<Dropdown.OptionData>     m_DropdownOptionData   = new();
         public RedDotData                    m_InfoData;
 
         public EntityRef<YIUILoopScrollChild> m_StackScroll;

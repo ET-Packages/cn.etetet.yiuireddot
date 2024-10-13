@@ -18,7 +18,7 @@ namespace ET.Client
 
         public EntityRef<YIUIChild> u_UIBase;
         public YIUIChild UIBase => u_UIBase;
-        public TMPro.TextMeshProUGUI u_ComStackText;
+        public UnityEngine.UI.Text u_ComStackText;
         public YIUIFramework.UIDataValueBool u_DataShowStack;
         public YIUIFramework.UIDataValueInt u_DataId;
         public YIUIFramework.UIDataValueString u_DataTime;

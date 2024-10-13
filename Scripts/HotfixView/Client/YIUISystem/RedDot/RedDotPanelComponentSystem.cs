@@ -1,6 +1,5 @@
 ﻿using System;
 using YIUIFramework;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -77,7 +76,7 @@ namespace ET.Client
                 var des = RedDotMgr.Inst.GetKeyDes(key);
                 if (string.IsNullOrEmpty(des)) continue;
 
-                self.m_DropdownOptionData.Add(new TMP_Dropdown.OptionData(des));
+                self.m_DropdownOptionData.Add(new Dropdown.OptionData(des));
                 self.m_AllDropdownSearchDic.Add(index, key);
                 index++;
             }
@@ -138,6 +137,8 @@ namespace ET.Client
 
         private static void InitInfo(this RedDotPanelComponent self)
         {
+            self.u_DataInfoName.SetValue("");
+            self.u_ComInputChangeCount.text = "";
             self.m_StackScroll = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComStackScroll, typeof(RedDotStackItemComponent));
             self.u_DataToggleUnityEngine.SetValue(RedDotStackHelper.StackHideUnityEngine);
             self.u_DataToggleYIUIFramework.SetValue(RedDotStackHelper.StackHideYIUIFramework);

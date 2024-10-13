@@ -38,9 +38,9 @@ namespace ET.Client
             self.UIPanel.CachePanelTime = 10;
 
             self.u_ComSearchScroll = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComSearchScroll");
-            self.u_ComDropdownSearch = self.UIBase.ComponentTable.FindComponent<TMPro.TMP_Dropdown>("u_ComDropdownSearch");
+            self.u_ComDropdownSearch = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.Dropdown>("u_ComDropdownSearch");
             self.u_ComStackScroll = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComStackScroll");
-            self.u_ComInputChangeCount = self.UIBase.ComponentTable.FindComponent<TMPro.TMP_InputField>("u_ComInputChangeCount");
+            self.u_ComInputChangeCount = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.InputField>("u_ComInputChangeCount");
             self.u_DataDropdownSearch = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataDropdownSearch");
             self.u_DataInfoName = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataInfoName");
             self.u_DataToggleUnityEngine = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataToggleUnityEngine");

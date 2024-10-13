@@ -23,9 +23,9 @@ namespace ET.Client
         public EntityRef<YIUIPanelComponent> u_UIPanel;
         public YIUIPanelComponent UIPanel => u_UIPanel;
         public UnityEngine.UI.LoopVerticalScrollRect u_ComSearchScroll;
-        public TMPro.TMP_Dropdown u_ComDropdownSearch;
+        public UnityEngine.UI.Dropdown u_ComDropdownSearch;
         public UnityEngine.UI.LoopVerticalScrollRect u_ComStackScroll;
-        public TMPro.TMP_InputField u_ComInputChangeCount;
+        public UnityEngine.UI.InputField u_ComInputChangeCount;
         public YIUIFramework.UIDataValueBool u_DataDropdownSearch;
         public YIUIFramework.UIDataValueString u_DataInfoName;
         public YIUIFramework.UIDataValueBool u_DataToggleUnityEngine;
