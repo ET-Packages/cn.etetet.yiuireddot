@@ -11,7 +11,7 @@ namespace ET.Client
     //主要用于在GM包上测试功能
     //当前包没有强制引用GM包
     //如果没有引用GM包  请删除这个文件
-    [GM(EGMType.Common, 1, "打开红点调试界面")]
+    [GM(EGMType.RedDot, 1, "打开红点调试界面")]
     public class GM_OpenReddotPanel: IGMCommand
     {
         public List<GMParamInfo> GetParams()
