@@ -63,12 +63,11 @@ namespace ET.Client
             self.u_EventChangeToggleYIUIBindHandle = self.u_EventChangeToggleYIUIBind.Add(self,"OnEventChangeToggleYIUIBindInvoke");
             self.u_EventChangeToggleYIUIFramework = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleYIUIFramework");
             self.u_EventChangeToggleYIUIFrameworkHandle = self.u_EventChangeToggleYIUIFramework.Add(self,"OnEventChangeToggleYIUIFrameworkInvoke");
-            self.u_EventClose = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventClose");
-            self.u_EventCloseHandle = self.u_EventClose.Add(self,"OnEventCloseInvoke");
             self.u_EventDropdownSearch = self.UIBase.EventTable.FindEvent<UIEventP1<int>>("u_EventDropdownSearch");
             self.u_EventDropdownSearchHandle = self.u_EventDropdownSearch.Add(self,"OnEventDropdownSearchInvoke");
             self.u_EventInputSearchEnd = self.UIBase.EventTable.FindEvent<UIEventP1<string>>("u_EventInputSearchEnd");
             self.u_EventInputSearchEndHandle = self.u_EventInputSearchEnd.Add(self,"OnEventInputSearchEndInvoke");
+            self.u_UIYIUIClose_White = self.UIBase.CDETable.FindUIOwner<ET.Client.YIUICloseCommonComponent>("YIUIClose_White");
 
         }
     }

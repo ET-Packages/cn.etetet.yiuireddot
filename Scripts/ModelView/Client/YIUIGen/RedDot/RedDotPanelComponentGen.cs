@@ -34,6 +34,8 @@ namespace ET.Client
         public YIUIFramework.UIDataValueBool u_DataToggleShowIndex;
         public YIUIFramework.UIDataValueBool u_DataToggleShowFileName;
         public YIUIFramework.UIDataValueBool u_DataToggleShowFilePath;
+        public EntityRef<ET.Client.YIUICloseCommonComponent> u_UIYIUIClose_White;
+        public ET.Client.YIUICloseCommonComponent UIYIUIClose_White => u_UIYIUIClose_White;
         public UIEventP1<string> u_EventChangeCount;
         public UIEventHandleP1<string> u_EventChangeCountHandle;
         public UIEventP1<bool> u_EventChangeToggleShowFileName;
@@ -48,8 +50,6 @@ namespace ET.Client
         public UIEventHandleP1<bool> u_EventChangeToggleYIUIBindHandle;
         public UIEventP1<bool> u_EventChangeToggleYIUIFramework;
         public UIEventHandleP1<bool> u_EventChangeToggleYIUIFrameworkHandle;
-        public UIEventP0 u_EventClose;
-        public UIEventHandleP0 u_EventCloseHandle;
         public UIEventP1<int> u_EventDropdownSearch;
         public UIEventHandleP1<int> u_EventDropdownSearchHandle;
         public UIEventP1<string> u_EventInputSearchEnd;
