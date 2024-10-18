@@ -48,7 +48,7 @@ namespace YIUIFramework.Editor
         [FolderPath]
         [ShowInInspector]
         [ReadOnly]
-        public string UIRedDotKeyClassPath = UIRedDotPackagePath + "/Scripts/ModelView/ERedDotKeyType.cs";
+        public string UIRedDotKeyClassPath = UIRedDotPackagePath + "/Scripts/ModelView/Client/ERedDotKeyType.cs";
 
         [LabelText("红点关系配置资源路径")]
         [FolderPath]
