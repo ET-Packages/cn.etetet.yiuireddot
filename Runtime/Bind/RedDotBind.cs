@@ -54,6 +54,7 @@ namespace YIUIFramework
 
         private void OnDestroy()
         {
+            if (Key <= 0) return;
             if (YIUISingletonHelper.Disposing)
                 return;
             RedDotMgr.Inst?.RemoveChanged(Key, OnRedDotChangeHandler);
