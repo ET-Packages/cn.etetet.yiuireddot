@@ -1,15 +1,15 @@
 ﻿using System.Collections;
 using Sirenix.OdinInspector;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace YIUIFramework
 {
-    public class RedDotBind : MonoBehaviour
+    public class RedDotTmpBind : MonoBehaviour
     {
         [SerializeField]
         [LabelText("文本")]
-        private Text m_Text;
+        private TextMeshProUGUI m_Text;
 
         [SerializeField]
         [LabelText("红点枚举")]
