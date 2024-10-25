@@ -34,7 +34,7 @@ namespace ET.Client
             self.u_DataOs = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataOs");
             self.u_DataSource = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueString>("u_DataSource");
             self.u_EventShowStack = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventShowStack");
-            self.u_EventShowStackHandle = self.u_EventShowStack.Add(self,"OnEventShowStackInvoke");
+            self.u_EventShowStackHandle = self.u_EventShowStack.Add(self,RedDotStackItemComponent.OnEventShowStackInvoke);
 
         }
     }

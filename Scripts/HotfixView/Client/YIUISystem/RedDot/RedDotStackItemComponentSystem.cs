@@ -19,7 +19,7 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotStackItemComponent.OnEventShowStackInvoke)]
         private static void OnEventShowStackInvoke(this RedDotStackItemComponent self)
         {
             self.u_ComStackText.text = self.RedDotStackData?.GetStackContent() ?? "";

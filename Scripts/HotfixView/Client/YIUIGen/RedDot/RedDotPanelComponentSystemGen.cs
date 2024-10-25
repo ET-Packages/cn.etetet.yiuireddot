@@ -50,23 +50,23 @@ namespace ET.Client
             self.u_DataToggleShowFileName = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataToggleShowFileName");
             self.u_DataToggleShowFilePath = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataToggleShowFilePath");
             self.u_EventChangeCount = self.UIBase.EventTable.FindEvent<UIEventP1<string>>("u_EventChangeCount");
-            self.u_EventChangeCountHandle = self.u_EventChangeCount.Add(self,"OnEventChangeCountInvoke");
+            self.u_EventChangeCountHandle = self.u_EventChangeCount.Add(self,RedDotPanelComponent.OnEventChangeCountInvoke);
             self.u_EventChangeToggleShowFileName = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowFileName");
-            self.u_EventChangeToggleShowFileNameHandle = self.u_EventChangeToggleShowFileName.Add(self,"OnEventChangeToggleShowFileNameInvoke");
+            self.u_EventChangeToggleShowFileNameHandle = self.u_EventChangeToggleShowFileName.Add(self,RedDotPanelComponent.OnEventChangeToggleShowFileNameInvoke);
             self.u_EventChangeToggleShowFilePath = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowFilePath");
-            self.u_EventChangeToggleShowFilePathHandle = self.u_EventChangeToggleShowFilePath.Add(self,"OnEventChangeToggleShowFilePathInvoke");
+            self.u_EventChangeToggleShowFilePathHandle = self.u_EventChangeToggleShowFilePath.Add(self,RedDotPanelComponent.OnEventChangeToggleShowFilePathInvoke);
             self.u_EventChangeToggleShowStackIndex = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleShowStackIndex");
-            self.u_EventChangeToggleShowStackIndexHandle = self.u_EventChangeToggleShowStackIndex.Add(self,"OnEventChangeToggleShowStackIndexInvoke");
+            self.u_EventChangeToggleShowStackIndexHandle = self.u_EventChangeToggleShowStackIndex.Add(self,RedDotPanelComponent.OnEventChangeToggleShowStackIndexInvoke);
             self.u_EventChangeToggleUnityEngine = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleUnityEngine");
-            self.u_EventChangeToggleUnityEngineHandle = self.u_EventChangeToggleUnityEngine.Add(self,"OnEventChangeToggleUnityEngineInvoke");
+            self.u_EventChangeToggleUnityEngineHandle = self.u_EventChangeToggleUnityEngine.Add(self,RedDotPanelComponent.OnEventChangeToggleUnityEngineInvoke);
             self.u_EventChangeToggleYIUIBind = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleYIUIBind");
-            self.u_EventChangeToggleYIUIBindHandle = self.u_EventChangeToggleYIUIBind.Add(self,"OnEventChangeToggleYIUIBindInvoke");
+            self.u_EventChangeToggleYIUIBindHandle = self.u_EventChangeToggleYIUIBind.Add(self,RedDotPanelComponent.OnEventChangeToggleYIUIBindInvoke);
             self.u_EventChangeToggleYIUIFramework = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventChangeToggleYIUIFramework");
-            self.u_EventChangeToggleYIUIFrameworkHandle = self.u_EventChangeToggleYIUIFramework.Add(self,"OnEventChangeToggleYIUIFrameworkInvoke");
+            self.u_EventChangeToggleYIUIFrameworkHandle = self.u_EventChangeToggleYIUIFramework.Add(self,RedDotPanelComponent.OnEventChangeToggleYIUIFrameworkInvoke);
             self.u_EventDropdownSearch = self.UIBase.EventTable.FindEvent<UIEventP1<int>>("u_EventDropdownSearch");
-            self.u_EventDropdownSearchHandle = self.u_EventDropdownSearch.Add(self,"OnEventDropdownSearchInvoke");
+            self.u_EventDropdownSearchHandle = self.u_EventDropdownSearch.Add(self,RedDotPanelComponent.OnEventDropdownSearchInvoke);
             self.u_EventInputSearchEnd = self.UIBase.EventTable.FindEvent<UIEventP1<string>>("u_EventInputSearchEnd");
-            self.u_EventInputSearchEndHandle = self.u_EventInputSearchEnd.Add(self,"OnEventInputSearchEndInvoke");
+            self.u_EventInputSearchEndHandle = self.u_EventInputSearchEnd.Add(self,RedDotPanelComponent.OnEventInputSearchEndInvoke);
             self.u_UIYIUIClose_White = self.UIBase.CDETable.FindUIOwner<ET.Client.YIUICloseCommonComponent>("YIUIClose_White");
 
         }

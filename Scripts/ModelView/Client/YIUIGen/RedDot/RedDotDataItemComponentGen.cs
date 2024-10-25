@@ -28,12 +28,16 @@ namespace ET.Client
         public YIUIFramework.UIDataValueBool u_DataSwitchTips;
         public UIEventP0 u_EventChild;
         public UIEventHandleP0 u_EventChildHandle;
+        public const string OnEventChildInvoke = "RedDotDataItemComponent.OnEventChildInvoke";
         public UIEventP0 u_EventClickItem;
         public UIEventHandleP0 u_EventClickItemHandle;
+        public const string OnEventClickItemInvoke = "RedDotDataItemComponent.OnEventClickItemInvoke";
         public UIEventP0 u_EventParent;
         public UIEventHandleP0 u_EventParentHandle;
+        public const string OnEventParentInvoke = "RedDotDataItemComponent.OnEventParentInvoke";
         public UIEventP1<bool> u_EventTips;
         public UIEventHandleP1<bool> u_EventTipsHandle;
+        public const string OnEventTipsInvoke = "RedDotDataItemComponent.OnEventTipsInvoke";
 
     }
 }

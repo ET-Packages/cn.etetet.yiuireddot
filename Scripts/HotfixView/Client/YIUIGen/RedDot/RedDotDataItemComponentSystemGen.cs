@@ -36,13 +36,13 @@ namespace ET.Client
             self.u_DataShowType = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataShowType");
             self.u_DataSwitchTips = self.UIBase.DataTable.FindDataValue<YIUIFramework.UIDataValueBool>("u_DataSwitchTips");
             self.u_EventChild = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventChild");
-            self.u_EventChildHandle = self.u_EventChild.Add(self,"OnEventChildInvoke");
+            self.u_EventChildHandle = self.u_EventChild.Add(self,RedDotDataItemComponent.OnEventChildInvoke);
             self.u_EventClickItem = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventClickItem");
-            self.u_EventClickItemHandle = self.u_EventClickItem.Add(self,"OnEventClickItemInvoke");
+            self.u_EventClickItemHandle = self.u_EventClickItem.Add(self,RedDotDataItemComponent.OnEventClickItemInvoke);
             self.u_EventParent = self.UIBase.EventTable.FindEvent<UIEventP0>("u_EventParent");
-            self.u_EventParentHandle = self.u_EventParent.Add(self,"OnEventParentInvoke");
+            self.u_EventParentHandle = self.u_EventParent.Add(self,RedDotDataItemComponent.OnEventParentInvoke);
             self.u_EventTips = self.UIBase.EventTable.FindEvent<UIEventP1<bool>>("u_EventTips");
-            self.u_EventTipsHandle = self.u_EventTips.Add(self,"OnEventTipsInvoke");
+            self.u_EventTipsHandle = self.u_EventTips.Add(self,RedDotDataItemComponent.OnEventTipsInvoke);
 
         }
     }

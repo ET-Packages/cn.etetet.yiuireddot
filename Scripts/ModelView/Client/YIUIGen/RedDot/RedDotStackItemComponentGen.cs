@@ -26,6 +26,7 @@ namespace ET.Client
         public YIUIFramework.UIDataValueString u_DataSource;
         public UIEventP0 u_EventShowStack;
         public UIEventHandleP0 u_EventShowStackHandle;
+        public const string OnEventShowStackInvoke = "RedDotStackItemComponent.OnEventShowStackInvoke";
 
     }
 }

@@ -31,25 +31,25 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotDataItemComponent.OnEventTipsInvoke)]
         private static void OnEventTipsInvoke(this RedDotDataItemComponent self, bool p1)
         {
             RedDotMgr.Inst.SetTips(self.m_Data.Key, p1);
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotDataItemComponent.OnEventParentInvoke)]
         private static void OnEventParentInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickParentListEvent() { Data = self.m_Data }).NoContext();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotDataItemComponent.OnEventClickItemInvoke)]
         private static void OnEventClickItemInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickItemEvent { Data = self.m_Data }).NoContext();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotDataItemComponent.OnEventChildInvoke)]
         private static void OnEventChildInvoke(this RedDotDataItemComponent self)
         {
             self.DynamicEvent(new OnClickChildListEvent { Data = self.m_Data }).NoContext();

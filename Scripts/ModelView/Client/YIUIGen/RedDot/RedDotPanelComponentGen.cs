@@ -38,22 +38,31 @@ namespace ET.Client
         public ET.Client.YIUICloseCommonComponent UIYIUIClose_White => u_UIYIUIClose_White;
         public UIEventP1<string> u_EventChangeCount;
         public UIEventHandleP1<string> u_EventChangeCountHandle;
+        public const string OnEventChangeCountInvoke = "RedDotPanelComponent.OnEventChangeCountInvoke";
         public UIEventP1<bool> u_EventChangeToggleShowFileName;
         public UIEventHandleP1<bool> u_EventChangeToggleShowFileNameHandle;
+        public const string OnEventChangeToggleShowFileNameInvoke = "RedDotPanelComponent.OnEventChangeToggleShowFileNameInvoke";
         public UIEventP1<bool> u_EventChangeToggleShowFilePath;
         public UIEventHandleP1<bool> u_EventChangeToggleShowFilePathHandle;
+        public const string OnEventChangeToggleShowFilePathInvoke = "RedDotPanelComponent.OnEventChangeToggleShowFilePathInvoke";
         public UIEventP1<bool> u_EventChangeToggleShowStackIndex;
         public UIEventHandleP1<bool> u_EventChangeToggleShowStackIndexHandle;
+        public const string OnEventChangeToggleShowStackIndexInvoke = "RedDotPanelComponent.OnEventChangeToggleShowStackIndexInvoke";
         public UIEventP1<bool> u_EventChangeToggleUnityEngine;
         public UIEventHandleP1<bool> u_EventChangeToggleUnityEngineHandle;
+        public const string OnEventChangeToggleUnityEngineInvoke = "RedDotPanelComponent.OnEventChangeToggleUnityEngineInvoke";
         public UIEventP1<bool> u_EventChangeToggleYIUIBind;
         public UIEventHandleP1<bool> u_EventChangeToggleYIUIBindHandle;
+        public const string OnEventChangeToggleYIUIBindInvoke = "RedDotPanelComponent.OnEventChangeToggleYIUIBindInvoke";
         public UIEventP1<bool> u_EventChangeToggleYIUIFramework;
         public UIEventHandleP1<bool> u_EventChangeToggleYIUIFrameworkHandle;
+        public const string OnEventChangeToggleYIUIFrameworkInvoke = "RedDotPanelComponent.OnEventChangeToggleYIUIFrameworkInvoke";
         public UIEventP1<int> u_EventDropdownSearch;
         public UIEventHandleP1<int> u_EventDropdownSearchHandle;
+        public const string OnEventDropdownSearchInvoke = "RedDotPanelComponent.OnEventDropdownSearchInvoke";
         public UIEventP1<string> u_EventInputSearchEnd;
         public UIEventHandleP1<string> u_EventInputSearchEndHandle;
+        public const string OnEventInputSearchEndInvoke = "RedDotPanelComponent.OnEventInputSearchEndInvoke";
 
     }
 }

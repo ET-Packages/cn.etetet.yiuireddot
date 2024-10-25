@@ -217,7 +217,7 @@ namespace ET.Client
 
         #region YIUIEvent开始
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventInputSearchEndInvoke)]
         private static void OnEventInputSearchEndInvoke(this RedDotPanelComponent self, string p1)
         {
             if (string.IsNullOrEmpty(p1))
@@ -235,7 +235,7 @@ namespace ET.Client
             self.RefreshSearchKey(key);
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventDropdownSearchInvoke)]
         private static void OnEventDropdownSearchInvoke(this RedDotPanelComponent self, int p1)
         {
             if (!self.m_AllDropdownSearchDic.TryGetValue(p1, out var key))
@@ -247,13 +247,7 @@ namespace ET.Client
             self.RefreshSearchKey(key);
         }
 
-        [YIUIInvoke]
-        private static void OnEventCloseInvoke(this RedDotPanelComponent self)
-        {
-            self.UIPanel.Close();
-        }
-
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleYIUIFrameworkInvoke)]
         private static void OnEventChangeToggleYIUIFrameworkInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.StackHideYIUIFramework = p1;
@@ -261,7 +255,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleYIUIBindInvoke)]
         private static void OnEventChangeToggleYIUIBindInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.StackHideYIUIBind = p1;
@@ -269,7 +263,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleUnityEngineInvoke)]
         private static void OnEventChangeToggleUnityEngineInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.StackHideUnityEngine = p1;
@@ -277,7 +271,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleShowStackIndexInvoke)]
         private static void OnEventChangeToggleShowStackIndexInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.ShowStackIndex = p1;
@@ -285,7 +279,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleShowFilePathInvoke)]
         private static void OnEventChangeToggleShowFilePathInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.ShowFilePath = p1;
@@ -293,7 +287,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeToggleShowFileNameInvoke)]
         private static void OnEventChangeToggleShowFileNameInvoke(this RedDotPanelComponent self, bool p1)
         {
             RedDotStackHelper.ShowFileNameStack = p1;
@@ -301,7 +295,7 @@ namespace ET.Client
             self.ChangeToggleRefreshStack();
         }
 
-        [YIUIInvoke]
+        [YIUIInvoke(RedDotPanelComponent.OnEventChangeCountInvoke)]
         private static void OnEventChangeCountInvoke(this RedDotPanelComponent self, string p1)
         {
             if (string.IsNullOrEmpty(p1))
