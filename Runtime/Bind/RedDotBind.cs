@@ -38,7 +38,7 @@ namespace YIUIFramework
 
         [ShowInInspector]
         [ReadOnly]
-        [LabelText("显影")]
+        [LabelText("显隐")]
         public bool Show { get; private set; }
 
         [ShowInInspector]
