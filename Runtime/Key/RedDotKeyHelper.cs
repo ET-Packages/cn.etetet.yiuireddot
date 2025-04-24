@@ -2,12 +2,42 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Sirenix.OdinInspector;
+using Sirenix.Utilities;
 
 namespace YIUIFramework
 {
     public static class RedDotKeyHelper
     {
         private static List<int> m_AllRedDotKey;
+
+        private static List<int> AllRedDotKey
+        {
+            get
+            {
+                if (m_AllRedDotKey == null)
+                {
+                    GetKeys();
+                }
+
+                return m_AllRedDotKey;
+            }
+        }
+
+        private static HashSet<int> m_HashAllRedDotKey;
+
+        /// <summary>
+        /// 检查这个Key 是否存在
+        /// </summary>
+        public static bool ContainsKey(int key)
+        {
+            if (m_HashAllRedDotKey == null)
+            {
+                m_HashAllRedDotKey = new();
+                m_HashAllRedDotKey.AddRange(AllRedDotKey);
+            }
+
+            return m_HashAllRedDotKey.Contains(key);
+        }
 
         /// <summary>
         /// 反射获取枚举列表
@@ -21,7 +51,8 @@ namespace YIUIFramework
                 return m_AllRedDotKey;
             }
 
-            m_AllRedDotKey = new();
+            m_AllRedDotKey     = new();
+            m_HashAllRedDotKey = null;
             #if UNITY_EDITOR
             m_RedDotKeyDesc = new();
             #endif
