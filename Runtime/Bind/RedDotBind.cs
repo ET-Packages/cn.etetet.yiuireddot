@@ -81,6 +81,7 @@ namespace YIUIFramework
                 return;
             }
 
+            OnDestroy();
             RedDotMgr.Inst?.AddChanged(m_Key, OnRedDotChangeHandler);
         }
 
@@ -108,7 +109,7 @@ namespace YIUIFramework
         {
         }
 
-        //需要动态改变的可以预制时选无
+        //需要动态改变的,可以预制时,选无
         //然后调用这个方法动态的修改
         public void ChangeBind(int key, bool force = false)
         {
