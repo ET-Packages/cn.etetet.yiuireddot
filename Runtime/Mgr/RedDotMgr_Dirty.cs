@@ -22,13 +22,13 @@ namespace YIUIFramework
         {
             m_DirtyData = new HashSet<RedDotData>();
 
-            ET.EventSystem.Instance?.YIUIInvokeSync(new YIUIInvokeCountDownAdd
+            ET.EventSystem.Instance?.YIUIInvokeEntitySync(EntityRef, new YIUIInvokeEntity_CountDownAdd
             {
                 TimerCallback = RedDotUpdateRefresh,
-                TotalTime     = 10000,
-                Interval      = 1f / m_RedDotDirtyFrame,
+                TotalTime = 10000,
+                Interval = 1f / m_RedDotDirtyFrame,
                 StartCallback = true,
-                Forever       = true
+                Forever = true
             });
         }
 
@@ -39,7 +39,7 @@ namespace YIUIFramework
 
         private void DisposeDirty()
         {
-            ET.EventSystem.Instance?.YIUIInvokeSync(new YIUIInvokeCountDownRemove { TimerCallback = RedDotUpdateRefresh });
+            ET.EventSystem.Instance?.YIUIInvokeEntitySync(EntityRef, new YIUIInvokeEntity_CountDownRemove { TimerCallback = RedDotUpdateRefresh });
         }
 
         private bool TryDirtySetCount(RedDotData data, int count)

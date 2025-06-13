@@ -57,10 +57,10 @@ namespace YIUIFramework
         /// </summary>
         private async ETTask<bool> LoadConfigAsset()
         {
-            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeAsync<YIUIInvokeLoad, ETTask<UnityObject>>(new YIUIInvokeLoad
+            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsync<YIUIInvokeEntity_Load, ETTask<UnityObject>>(EntityRef, new YIUIInvokeEntity_Load
             {
                 LoadType = typeof(RedDotConfigAsset),
-                ResName  = RedDotConfigAssetName
+                ResName = RedDotConfigAssetName
             });
 
             if (loadResult == null)
@@ -74,7 +74,7 @@ namespace YIUIFramework
             InitNewAllData();
             InitLinkData();
 
-            ET.EventSystem.Instance?.YIUIInvokeSync(new YIUIInvokeRelease
+            ET.EventSystem.Instance?.YIUIInvokeEntitySync(EntityRef, new YIUIInvokeEntity_Release
             {
                 obj = loadResult
             });
@@ -93,7 +93,7 @@ namespace YIUIFramework
             {
                 //有配置则使用配置 没有则使用默认配置
                 var config = m_RedDotConfigAsset.GetConfigData(key) ?? new RedDotConfigData { Key = key };
-                var data   = new RedDotData(config);
+                var data = new RedDotData(config);
                 m_AllRedDotData.Add(key, data);
             }
         }

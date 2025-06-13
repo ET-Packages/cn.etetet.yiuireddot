@@ -9,8 +9,7 @@ namespace YIUIFramework
     {
         private const string RedDotKeyAssetName = "RedDotKeyAsset";
 
-        private Dictionary<int, RedDotKeyData> m_AllRedDotKeyData =
-                new Dictionary<int, RedDotKeyData>();
+        private readonly Dictionary<int, RedDotKeyData> m_AllRedDotKeyData = new();
 
         public IReadOnlyDictionary<int, RedDotKeyData> AllRedDotKeyData => m_AllRedDotKeyData;
 
@@ -21,10 +20,10 @@ namespace YIUIFramework
         /// </summary>
         private async ETTask<bool> LoadKeyAsset()
         {
-            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeAsync<YIUIInvokeLoad, ETTask<UnityObject>>(new YIUIInvokeLoad
+            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsync<YIUIInvokeEntity_Load, ETTask<UnityObject>>(EntityRef, new YIUIInvokeEntity_Load
             {
                 LoadType = typeof(RedDotKeyAsset),
-                ResName  = RedDotKeyAssetName
+                ResName = RedDotKeyAssetName
             });
 
             if (loadResult == null)
@@ -37,7 +36,7 @@ namespace YIUIFramework
 
             InitKeyData();
 
-            ET.EventSystem.Instance?.YIUIInvokeSync(new YIUIInvokeRelease
+            ET.EventSystem.Instance?.YIUIInvokeEntitySync(EntityRef, new YIUIInvokeEntity_Release
             {
                 obj = loadResult
             });
