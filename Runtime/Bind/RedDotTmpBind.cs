@@ -1,4 +1,4 @@
-﻿#if TextMeshPro
+#if TextMeshPro
 using TMPro;
 using UnityEngine;
 using Sirenix.OdinInspector;
