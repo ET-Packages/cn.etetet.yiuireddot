@@ -17,7 +17,9 @@ namespace YIUIFramework
             if (data == null)
             {
                 if (!Disposed)
+                {
                     Debug.LogError($"没有获取到这个红点数据 {key} Tips:如果是新增的注意需要ET编译过 否则就是没有 请检查");
+                }
             }
 
             return data;

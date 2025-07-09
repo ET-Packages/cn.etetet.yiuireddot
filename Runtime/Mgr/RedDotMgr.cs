@@ -20,11 +20,11 @@ namespace YIUIFramework
     public partial class RedDotMgr : YIUISingleton<RedDotMgr>
     {
         //实时修改红点还是异步脏标定时修改
-        private static bool SyncSetCount = false; //默认异步
+        private static readonly bool SyncSetCount = false; //默认异步
 
         private const string RedDotConfigAssetName = "RedDotConfigAsset";
 
-        private Dictionary<int, RedDotData> m_AllRedDotData = new Dictionary<int, RedDotData>();
+        private readonly Dictionary<int, RedDotData> m_AllRedDotData = new();
 
         public IReadOnlyDictionary<int, RedDotData> AllRedDotData => m_AllRedDotData;
 

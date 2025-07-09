@@ -57,17 +57,17 @@ namespace YIUIFramework
             m_RedDotKeyDesc = new();
             #endif
 
-            var assembly = AssemblyHelper.GetAssembly("ET.ModelView");
+            var assembly = AssemblyHelper.GetAssembly("ET.Model");
             if (assembly == null)
             {
-                Logger.LogError($"没有找到ET.ModelView程序集");
+                Logger.LogError($"没有找到ET.Model程序集");
                 return m_AllRedDotKey;
             }
 
-            Type redDotKeyType = assembly.GetType("ET.Client.ERedDotKeyType");
+            Type redDotKeyType = assembly.GetType("ET.ERedDotKeyType");
             if (redDotKeyType == null)
             {
-                Logger.LogError($"没有找到ET.Client.ERedDotKeyType类型");
+                Logger.LogError($"没有找到ET.ERedDotKeyType类型");
                 return m_AllRedDotKey;
             }
 

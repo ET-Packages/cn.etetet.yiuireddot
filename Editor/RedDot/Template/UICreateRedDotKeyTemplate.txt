@@ -1,6 +1,6 @@
 ﻿using Sirenix.OdinInspector;
 
-namespace ET.Client
+namespace ET
 {
     /// <summary>
     /// 红点系统 所有key枚举

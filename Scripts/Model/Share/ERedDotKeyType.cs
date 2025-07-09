@@ -1,6 +1,6 @@
-﻿using Sirenix.OdinInspector;
+using Sirenix.OdinInspector;
 
-namespace ET.Client
+namespace ET
 {
     /// <summary>
     /// 红点系统 所有key枚举
@@ -32,7 +32,5 @@ namespace ET.Client
 
         [LabelText("升级")]
         public const int Key7 = 7;
-
-
     }
 }
