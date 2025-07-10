@@ -57,7 +57,7 @@ namespace YIUIFramework
         /// </summary>
         private async ETTask<bool> LoadConfigAsset()
         {
-            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsync<YIUIInvokeEntity_Load, ETTask<UnityObject>>(Entity, new YIUIInvokeEntity_Load
+            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsyncSafety<YIUIInvokeEntity_Load, ETTask<UnityObject>>(Entity, new YIUIInvokeEntity_Load
             {
                 LoadType = typeof(RedDotConfigAsset),
                 ResName = RedDotConfigAssetName
@@ -74,7 +74,7 @@ namespace YIUIFramework
             InitNewAllData();
             InitLinkData();
 
-            ET.EventSystem.Instance?.YIUIInvokeEntitySync(Entity, new YIUIInvokeEntity_Release
+            ET.EventSystem.Instance?.YIUIInvokeEntitySyncSafety(Entity, new YIUIInvokeEntity_Release
             {
                 obj = loadResult
             });

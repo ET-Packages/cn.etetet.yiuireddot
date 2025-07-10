@@ -20,7 +20,7 @@ namespace YIUIFramework
         /// </summary>
         private async ETTask<bool> LoadKeyAsset()
         {
-            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsync<YIUIInvokeEntity_Load, ETTask<UnityObject>>(Entity, new YIUIInvokeEntity_Load
+            var loadResult = await ET.EventSystem.Instance?.YIUIInvokeEntityAsyncSafety<YIUIInvokeEntity_Load, ETTask<UnityObject>>(Entity, new YIUIInvokeEntity_Load
             {
                 LoadType = typeof(RedDotKeyAsset),
                 ResName = RedDotKeyAssetName
@@ -36,7 +36,7 @@ namespace YIUIFramework
 
             InitKeyData();
 
-            ET.EventSystem.Instance?.YIUIInvokeEntitySync(Entity, new YIUIInvokeEntity_Release
+            ET.EventSystem.Instance?.YIUIInvokeEntitySyncSafety(Entity, new YIUIInvokeEntity_Release
             {
                 obj = loadResult
             });
