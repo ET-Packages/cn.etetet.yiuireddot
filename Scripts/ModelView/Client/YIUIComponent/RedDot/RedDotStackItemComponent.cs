@@ -5,6 +5,8 @@ namespace ET.Client
 {
     public partial class RedDotStackItemComponent : Entity
     {
-        public RedDotStack RedDotStackData;
+        public RedDotStack m_RedDotStackData;
+
+        public RedDotStack RedDotStackData => this.m_RedDotStackData;
     }
 }

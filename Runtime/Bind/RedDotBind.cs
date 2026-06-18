@@ -6,8 +6,12 @@ using UnityEngine;
 namespace YIUIFramework
 {
     [AddComponentMenu("YIUIFramework/红点/红点通用绑定 【RedDotBind】")]
-    public class RedDotBind : MonoBehaviour
+    public class RedDotBind : MonoBehaviour, IDynamicRedDotControl
     {
+        [LabelText("红点显隐对象")]
+        [Required("必须设置红点显隐对象！")]
+        public GameObject m_TargetGameObject;
+
         [SerializeField]
         [LabelText("红点枚举")]
         [EnableIf("@UIOperationHelper.CommonShowIf()")]
@@ -21,7 +25,7 @@ namespace YIUIFramework
         private IEnumerable GetKeyTypesSelectList()
         {
             var showValues = new ValueDropdownList<int>();
-            var keys       = RedDotKeyHelper.GetKeys();
+            var keys = RedDotKeyHelper.GetKeys();
 
             foreach (var key in keys)
             {
@@ -43,8 +47,8 @@ namespace YIUIFramework
         {
             if (!RedDotKeyHelper.ContainsKey(InputChangeKey))
             {
-                Debug.LogError($"不存在这个Key 请检查 {InputChangeKey}");
-                m_Key          = 0;
+                Logger.LogErrorContext(this.gameObject, $"不存在这个Key 请检查 {InputChangeKey}");
+                m_Key = 0;
                 InputChangeKey = 0;
                 return;
             }
@@ -55,6 +59,11 @@ namespace YIUIFramework
         private void OnKeyValueChanged()
         {
             InputChangeKey = m_Key;
+        }
+
+        private void OnValidate()
+        {
+            m_TargetGameObject ??= this.gameObject;
         }
 
         #endif
@@ -75,36 +84,46 @@ namespace YIUIFramework
         {
             if (m_Key <= 0)
             {
-                Show  = false;
-                Count = 0;
-                Refresh();
+                ResetState();
                 return;
             }
 
-            OnDestroy();
-            RedDotMgr.Inst?.AddChanged(m_Key, OnRedDotChangeHandler);
+            BindRedDotKey(m_Key);
         }
 
         private void OnDestroy()
         {
             if (m_Key <= 0) return;
-            if (YIUISingletonHelper.Disposing) return;
-            RedDotMgr.Inst?.RemoveChanged(m_Key, OnRedDotChangeHandler);
+            RemoveKeyListener(m_Key);
         }
 
-        private void OnRedDotChangeHandler(int count)
+        private void BindRedDotKey(int key)
         {
-            Show  = count >= 1;
-            Count = count;
-            Refresh();
+            RemoveKeyListener(m_Key);
+            if (key <= 0)
+            {
+                m_Key = 0;
+                Refresh(0);
+                return;
+            }
+
+            m_Key = key;
+            RedDotMgr.Inst?.AddChanged(m_Key, Refresh);
         }
 
-        private void Refresh()
+        //刷新可视化数据
+        private void Refresh(int count)
         {
-            gameObject.SetActive(Show);
-            ChangeText();
+            Count = count > 0 ? count : 0;
+            Show = Count >= 1;
+            this.m_TargetGameObject.SetActive(Show);
+            if (Show) //如果不显示会跳过修改文本,可能会出现隐藏的时候文本不是0的情况.属于正常 都隐藏了没必要去修改文本 浪费
+            {
+                ChangeText();
+            }
         }
 
+        //子类实现
         protected virtual void ChangeText()
         {
         }
@@ -115,24 +134,58 @@ namespace YIUIFramework
         {
             if (key <= 0)
             {
-                Debug.LogError($"修改为 {key} ,尝试修改的Key 错误 不可能 <= 0");
+                Logger.LogErrorContext(this.gameObject, $"修改为 {key} ,尝试修改的Key 错误 不可能 <= 0  {(m_Key > 0 ? $"如果就是想 {m_Key} 改成 0 请调用 ResetState" : "")}");
                 return;
             }
 
-            if (m_Key == key)
+            if (!force && m_Key > 0)
+            {
+                //原则上已经有监听了不允许修改 要修改必须强制修改
+                Logger.LogErrorContext(this.gameObject, $"已经有监听的红点 {m_Key} ,想修改为 {key} ,但是当前是非强制修改 所以禁止修改 请检查原因");
+                return;
+            }
+
+            BindRedDotKey(key);
+        }
+
+        //接口的强制绑定
+        public void BindKey(int key)
+        {
+            ChangeBind(key, true);
+        }
+
+        //跳过红点枚举,直接设定红点显示. 自定义显示数量.
+        //特殊情况下使用
+        public void SetManualCount(int count)
+        {
+            RemoveKeyListener(m_Key);
+            Refresh(count);
+        }
+
+        //重置状态
+        public void ResetState()
+        {
+            RemoveKeyListener(m_Key);
+            Refresh(0);
+            m_Key = 0;
+        }
+
+        //给接口用的 不是显隐对象是挂载脚本对象
+        public GameObject GetOwnerGameObject()
+        {
+            return gameObject;
+        }
+
+        //移除监听
+        private void RemoveKeyListener(int key)
+        {
+            if (key <= 0) return;
+            if (YIUISingletonHelper.Disposing)
             {
                 return;
             }
 
-            if (m_Key > 0 && !force)
-            {
-                Debug.LogError($"已经有监听的红点 {m_Key} ,想修改为 {key} ,但是当前是非强制修改 所以禁止修改 请检查原因");
-                return;
-            }
-
-            OnDestroy();
-            m_Key = key;
-            Awake();
+            RedDotMgr.Inst?.RemoveChanged(key, Refresh);
         }
     }
 }

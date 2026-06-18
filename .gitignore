@@ -1,2 +1,5 @@
 
+Assets/GameRes/RedDot/*.asset
 Assets/GameRes/RedDot/*.asset.meta
+Scripts/Model/Share/ERedDotKeyType.cs
+Scripts/Model/Share/ERedDotKeyType.cs.meta

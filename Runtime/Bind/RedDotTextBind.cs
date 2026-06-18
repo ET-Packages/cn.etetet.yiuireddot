@@ -11,6 +11,7 @@ namespace YIUIFramework
         [SerializeField]
         [LabelText("文本")]
         [EnableIf("@UIOperationHelper.CommonShowIf()")]
+        [Required("必须设置红点文本对象！")]
         private Text m_Text;
 
         protected override void ChangeText()
@@ -18,6 +19,10 @@ namespace YIUIFramework
             if (m_Text != null)
             {
                 m_Text.text = Count.ToString();
+            }
+            else
+            {
+                Logger.LogErrorContext(gameObject, $"{gameObject.name} 使用了文本显示,但是没有找到文本组件");
             }
         }
     }

@@ -114,10 +114,15 @@ namespace YIUIFramework
 
         private const int MAX_GROUP_SIZE = 10;
 
-        // 显示红点描述的下拉列表 超过10个时分组显示
+        // 显示红点描述的下拉列表
+        // 新ID规则：
+        // 1        = 根节点
+        // 1001     = 二级节点（预留3位）
+        // 100101   = 三级节点（每级追加2位）
+        // 10010101 = 四级节点（每级追加2位）
+        // 因此下拉菜单需要按树形层级分组，而不是按简单递增范围分组。
         internal static ValueDropdownList<int> SubDisplayValueDropdownList(ValueDropdownList<int> keys)
         {
-            //排序
             keys.Sort((a, b) =>
             {
                 var aId = a.Value;
@@ -125,50 +130,153 @@ namespace YIUIFramework
                 return aId.CompareTo(bId);
             });
 
-            if (keys.Count <= MAX_GROUP_SIZE)
+            var result = new ValueDropdownList<int>();
+            var keyMap = new Dictionary<int, ValueDropdownItem<int>>();
+            var childMap = new Dictionary<int, List<ValueDropdownItem<int>>>();
+
+            foreach (var item in keys)
             {
-                return keys;
-            }
-
-            return GetGroupValueDropdownList(keys, MAX_GROUP_SIZE);
-        }
-
-        private static ValueDropdownList<int> GetGroupValueDropdownList(ValueDropdownList<int> numbers, int groupSize)
-        {
-            ValueDropdownList<int> allGroups = new ValueDropdownList<int>();
-            int                    count     = numbers.Count;
-
-            while (count > 0)
-            {
-                int groupCount = Math.Min(groupSize, count);
-
-                var startItem   = numbers[0];
-                var startItemId = startItem.Value;
-                var endItem     = numbers[groupCount - 1];
-                var endItemId   = endItem.Value;
-                var groupText   = $"{startItemId} - {endItemId} ";
-
-                for (int i = 0; i < groupCount; i++)
+                if (item.Value <= 0)
                 {
-                    var item    = numbers[0];
-                    var newItem = new ValueDropdownItem<int>();
-                    newItem.Text  = $"{groupText}/{item.Text}";
-                    newItem.Value = item.Value;
-                    allGroups.Add(newItem);
-                    numbers.RemoveAt(0);
+                    continue;
                 }
 
-                count -= groupCount;
+                keyMap[item.Value] = item;
             }
 
-            int nextGroupSize = groupSize * MAX_GROUP_SIZE;
-
-            if (allGroups.Count > nextGroupSize)
+            foreach (var item in keys)
             {
-                return GetGroupValueDropdownList(allGroups, nextGroupSize);
+                if (item.Value <= 0)
+                {
+                    continue;
+                }
+
+                var parentKey = GetDisplayParentKey(item.Value, keyMap);
+                if (!childMap.TryGetValue(parentKey, out var childList))
+                {
+                    childList = new List<ValueDropdownItem<int>>();
+                    childMap[parentKey] = childList;
+                }
+
+                childList.Add(item);
             }
 
-            return allGroups;
+            if (keyMap.TryGetValue(1, out var rootItem))
+            {
+                result.Add(rootItem.Text, rootItem.Value);
+            }
+
+            AppendDropdownItems(result, childMap, 1, "", new HashSet<int> { 1 });
+
+            return result;
+        }
+
+        private static void AppendDropdownItems(
+                ValueDropdownList<int> result,
+                Dictionary<int, List<ValueDropdownItem<int>>> childMap,
+                int parentKey,
+                string prefix,
+                HashSet<int> parentChain)
+        {
+            if (!childMap.TryGetValue(parentKey, out var children) || children.Count == 0)
+            {
+                return;
+            }
+
+            children.Sort((a, b) => a.Value.CompareTo(b.Value));
+
+            for (var startIndex = 0; startIndex < children.Count; startIndex += MAX_GROUP_SIZE)
+            {
+                var count = Math.Min(MAX_GROUP_SIZE, children.Count - startIndex);
+                var groupPrefix = prefix;
+
+                if (children.Count > MAX_GROUP_SIZE)
+                {
+                    var startSegment = GetLocalSegmentText(children[startIndex].Value);
+                    var endSegment = GetLocalSegmentText(children[startIndex + count - 1].Value);
+                    groupPrefix = CombinePath(prefix, $"{startSegment}-{endSegment}");
+                }
+
+                for (var index = startIndex; index < startIndex + count; index++)
+                {
+                    var child = children[index];
+                    if (child.Value <= 0)
+                    {
+                        continue;
+                    }
+
+                    var itemPath = CombinePath(groupPrefix, child.Text);
+                    result.Add(itemPath, child.Value);
+                    if (parentChain.Contains(child.Value))
+                    {
+                        continue;
+                    }
+
+                    var childChain = new HashSet<int>(parentChain) { child.Value };
+                    AppendDropdownItems(result, childMap, child.Value, itemPath, childChain);
+                }
+            }
+        }
+
+        private static int GetDisplayParentKey(int key, Dictionary<int, ValueDropdownItem<int>> keyMap)
+        {
+            if (key == 1)
+            {
+                return 0;
+            }
+
+            if (!TryGetParentKey(key, out var parentKey))
+            {
+                return 1;
+            }
+
+            if (parentKey == 1 || keyMap.ContainsKey(parentKey))
+            {
+                return parentKey;
+            }
+
+            return 1;
+        }
+
+        private static bool TryGetParentKey(int key, out int parentKey)
+        {
+            parentKey = 0;
+
+            if (key <= 1)
+            {
+                return false;
+            }
+
+            var keyText = key.ToString();
+            if (keyText.Length <= 4)
+            {
+                parentKey = 1;
+                return true;
+            }
+
+            parentKey = int.Parse(keyText.Substring(0, keyText.Length - 2));
+            return true;
+        }
+
+        private static string GetLocalSegmentText(int key)
+        {
+            var keyText = key.ToString();
+            if (keyText.Length <= 4)
+            {
+                return keyText.Substring(1).PadLeft(3, '0');
+            }
+
+            return keyText.Substring(keyText.Length - 2, 2);
+        }
+
+        private static string CombinePath(string prefix, string segment)
+        {
+            if (string.IsNullOrEmpty(prefix))
+            {
+                return segment;
+            }
+
+            return $"{prefix}/{segment}";
         }
 
         #endif

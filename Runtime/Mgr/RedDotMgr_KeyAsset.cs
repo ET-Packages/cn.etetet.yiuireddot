@@ -62,13 +62,12 @@ namespace YIUIFramework
         /// </summary>
         public string GetKeyDes(int keyType)
         {
-            if (!m_AllRedDotKeyData.ContainsKey(keyType))
+            if (!m_AllRedDotKeyData.TryGetValue(keyType, out RedDotKeyData keyData))
             {
                 Debug.LogError($"不存在这个key {keyType}");
                 return "";
             }
 
-            var keyData = m_AllRedDotKeyData[keyType];
             return keyData.Des;
         }
     }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using YIUIFramework;
 using UnityEngine;
 using UnityEngine.UI;
@@ -91,8 +91,15 @@ namespace ET.Client
 
             self.m_CurrentDataList.Clear();
             self.m_CurrentDataList.Add(data);
-            self.RefreshSearchScroll();
+
+            // AddChanged 会立即回调 OnInfoChangeCount，新数据由回调刷新，避免首开连续刷新。
+            var needRefreshSearchScroll = self.m_InfoData == data;
             self.ResetStackInfo(data);
+
+            if (needRefreshSearchScroll)
+            {
+                self.RefreshSearchScroll();
+            }
         }
 
         private static void OnClickParentList(this RedDotPanelComponent self, RedDotData data)
@@ -151,12 +158,7 @@ namespace ET.Client
         [EntitySystem]
         private static void YIUILoopRenderer(this RedDotPanelComponent self, RedDotStackItemComponent item, RedDotStack data, int index, bool select)
         {
-            item.u_DataId.SetValue(data.Id);
-            item.u_DataTime.SetValue(data.GetTime());
-            item.u_DataOs.SetValue(data.GetOS(self.m_InfoData));
-            item.u_DataSource.SetValue(data.GetSource());
-            item.u_DataShowStack.SetValue(false);
-            item.RedDotStackData = data;
+            item.RefreshData(data, self.m_InfoData);
         }
 
         private static void ResetStackInfo(this RedDotPanelComponent self, RedDotData data)
@@ -176,6 +178,11 @@ namespace ET.Client
 
         private static void RemoveInfoChanged(this RedDotPanelComponent self)
         {
+            if (YIUISingletonHelper.IsQuitting || YIUISingletonHelper.Disposing)
+            {
+                return;
+            }
+
             if (self.m_InfoData != null)
             {
                 RedDotMgr.Inst.RemoveChanged(self.m_InfoData.Key, self.OnInfoChangeCount);

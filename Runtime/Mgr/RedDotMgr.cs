@@ -43,6 +43,8 @@ namespace YIUIFramework
             var resultKey = await LoadKeyAsset();
             if (!resultKey) return false;
             #endif
+            var resultShow = await LoadShowAsset();
+            if (!resultShow) return false;
 
             if (!SyncSetCount)
             {

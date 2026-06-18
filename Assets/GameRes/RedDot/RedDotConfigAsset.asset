@@ -11,12 +11,12 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45535728f0f947f9a2e9c2262eaec459, type: 3}
   m_Name: RedDotConfigAsset
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   serializationData:
     SerializedFormat: 2
-    SerializedBytes: 
+    SerializedBytes:
     ReferencedUnityObjects: []
-    SerializedBytesString: 
+    SerializedBytesString:
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
@@ -29,15 +29,15 @@ MonoBehaviour:
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.Int32,
         mscorlib]], mscorlib
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 12
-      Data: 7
-    - Name: 
+      Data: 24
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
       Data: 1
@@ -49,244 +49,856 @@ MonoBehaviour:
       Data: 1
     - Name: ParentList
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 100|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 0
-    - Name: 
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
-      Data: false
-    - Name: 
+      Data: true
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 2
+      Data: 1001
+    - Name: $v
+      Entry: 7
+      Data: 3|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 1001
+    - Name: ParentList
+      Entry: 7
+      Data: 101|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 1002
     - Name: $v
       Entry: 7
       Data: 4|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 2
+      Data: 1002
     - Name: ParentList
       Entry: 7
-      Data: 5|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 102|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
       Data: 1
-    - Name: 
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1003
+    - Name: $v
+      Entry: 7
+      Data: 5|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 1003
+    - Name: ParentList
+      Entry: 7
+      Data: 103|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 1004
     - Name: $v
       Entry: 7
       Data: 6|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 3
+      Data: 1004
     - Name: ParentList
       Entry: 7
-      Data: 7|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 104|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
-      Data: 2
-    - Name: 
+      Data: 1
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 4
+      Data: 1005
+    - Name: $v
+      Entry: 7
+      Data: 7|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 1005
+    - Name: ParentList
+      Entry: 7
+      Data: 105|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100101
     - Name: $v
       Entry: 7
       Data: 8|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 4
+      Data: 100101
     - Name: ParentList
       Entry: 7
-      Data: 9|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 106|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
-      Data: 2
-    - Name: 
+      Data: 1001
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 5
+      Data: 100102
+    - Name: $v
+      Entry: 7
+      Data: 9|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100102
+    - Name: ParentList
+      Entry: 7
+      Data: 107|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1001
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100103
     - Name: $v
       Entry: 7
       Data: 10|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 5
+      Data: 100103
     - Name: ParentList
       Entry: 7
-      Data: 11|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 108|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
-      Data: 1
-    - Name: 
+      Data: 1001
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 6
+      Data: 100104
+    - Name: $v
+      Entry: 7
+      Data: 11|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100104
+    - Name: ParentList
+      Entry: 7
+      Data: 109|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1001
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 10010201
     - Name: $v
       Entry: 7
       Data: 12|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 6
+      Data: 10010201
     - Name: ParentList
       Entry: 7
-      Data: 13|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 110|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
-      Data: 5
-    - Name: 
+      Data: 100102
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 7
-      Data: 
+      Data:
     - Name: $k
       Entry: 3
-      Data: 7
+      Data: 10010202
+    - Name: $v
+      Entry: 7
+      Data: 13|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 10010202
+    - Name: ParentList
+      Entry: 7
+      Data: 111|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 100102
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 10010203
     - Name: $v
       Entry: 7
       Data: 14|YIUIFramework.RedDotConfigData, ET.YIUIFramework
     - Name: Key
       Entry: 3
-      Data: 7
+      Data: 10010203
     - Name: ParentList
       Entry: 7
-      Data: 15|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
-    - Name: 
+      Data: 112|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
       Entry: 12
       Data: 1
-    - Name: 
+    - Name:
       Entry: 3
-      Data: 5
-    - Name: 
+      Data: 100102
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
     - Name: SwitchTips
       Entry: 5
       Data: true
-    - Name: 
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
-    - Name: 
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 10010301
+    - Name: $v
+      Entry: 7
+      Data: 15|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 10010301
+    - Name: ParentList
+      Entry: 7
+      Data: 113|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 100103
+    - Name:
       Entry: 13
-      Data: 
-    - Name: 
+      Data:
+    - Name:
       Entry: 8
-      Data: 
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 10010302
+    - Name: $v
+      Entry: 7
+      Data: 16|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 10010302
+    - Name: ParentList
+      Entry: 7
+      Data: 114|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 100103
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 10010303
+    - Name: $v
+      Entry: 7
+      Data: 17|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 10010303
+    - Name: ParentList
+      Entry: 7
+      Data: 115|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 100103
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100201
+    - Name: $v
+      Entry: 7
+      Data: 18|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100201
+    - Name: ParentList
+      Entry: 7
+      Data: 116|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1002
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100301
+    - Name: $v
+      Entry: 7
+      Data: 19|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100301
+    - Name: ParentList
+      Entry: 7
+      Data: 117|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1003
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 1006
+    - Name: $v
+      Entry: 7
+      Data: 20|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 1006
+    - Name: ParentList
+      Entry: 7
+      Data: 118|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100601
+    - Name: $v
+      Entry: 7
+      Data: 21|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100601
+    - Name: ParentList
+      Entry: 7
+      Data: 119|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1006
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100602
+    - Name: $v
+      Entry: 7
+      Data: 22|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100602
+    - Name: ParentList
+      Entry: 7
+      Data: 120|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1006
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100603
+    - Name: $v
+      Entry: 7
+      Data: 23|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100603
+    - Name: ParentList
+      Entry: 7
+      Data: 121|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1006
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100604
+    - Name: $v
+      Entry: 7
+      Data: 24|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100604
+    - Name: ParentList
+      Entry: 7
+      Data: 122|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1006
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 7
+      Data:
+    - Name: $k
+      Entry: 3
+      Data: 100605
+    - Name: $v
+      Entry: 7
+      Data: 25|YIUIFramework.RedDotConfigData, ET.YIUIFramework
+    - Name: Key
+      Entry: 3
+      Data: 100605
+    - Name: ParentList
+      Entry: 7
+      Data: 123|System.Collections.Generic.List`1[[System.Int32, mscorlib]], mscorlib
+    - Name:
+      Entry: 12
+      Data: 1
+    - Name:
+      Entry: 3
+      Data: 1006
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name: SwitchTips
+      Entry: 5
+      Data: true
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 8
+      Data:
+    - Name:
+      Entry: 13
+      Data:
+    - Name:
+      Entry: 8
+      Data:

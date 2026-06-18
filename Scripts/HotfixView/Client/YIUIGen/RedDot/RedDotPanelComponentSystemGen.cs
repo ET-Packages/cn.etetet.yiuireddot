@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using YIUIFramework;
 using System.Collections.Generic;
@@ -37,7 +37,7 @@ namespace ET.Client
             self.UIPanel.Priority = 1000;
             self.UIPanel.CachePanelTime = 10;
 
-            self.u_ComSearchScroll = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComSearchScroll");
+            self.u_ComSearchScroll = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopHorizontalScrollRect>("u_ComSearchScroll");
             self.u_ComDropdownSearch = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.Dropdown>("u_ComDropdownSearch");
             self.u_ComStackScroll = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.LoopVerticalScrollRect>("u_ComStackScroll");
             self.u_ComInputChangeCount = self.UIBase.ComponentTable.FindComponent<UnityEngine.UI.InputField>("u_ComInputChangeCount");

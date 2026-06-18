@@ -50,6 +50,22 @@ namespace YIUIFramework.Editor
         [ReadOnly]
         public string UIRedDotKeyClassPath = UIRedDotPackagePath + "/Scripts/Model/Share/ERedDotKeyType.cs";
 
+        [LabelText("红点动态预制关联资源路径")]
+        [FolderPath]
+        [ShowInInspector]
+        [ReadOnly]
+        public const string UIRedDotShowAssetPath = UIRedDotAssetFolderPath + "/RedDotShowAsset.asset";
+
+        [ShowInInspector]
+        [ReadOnly]
+        internal RedDotShowAsset m_RedDotShowAsset;
+
+        [LabelText("红点动态预制枚举路径")]
+        [FolderPath]
+        [ShowInInspector]
+        [ReadOnly]
+        public string UIRedDotShowClassPath = UIRedDotPackagePath + "/Runtime/Data/ERadDotShowType.cs";
+
         [LabelText("红点关系配置资源路径")]
         [FolderPath]
         [ShowInInspector]
@@ -85,21 +101,31 @@ namespace YIUIFramework.Editor
         [ShowIf("m_EUIRedDotViewType", EUIRedDotViewType.Config)]
         private UIRedDotConfigView m_ConfigView;
 
+        [ShowInInspector]
+        [ShowIf("m_EUIRedDotViewType", EUIRedDotViewType.DynamicShow)]
+        private UIRedDotShowView m_ShowView;
+
+        internal EUIRedDotViewType CurrentViewType => m_EUIRedDotViewType;
+
         public override void Initialize()
         {
             m_EUIRedDotViewType = m_EUIRedDotViewTypePrefs.Value;
             LoadRedDotKeyAsset();
             LoadRedDotConfigAsset();
+            LoadRedDotShowAsset();
             m_KeyView = new UIRedDotKeyView(this);
             m_KeyView.Initialize();
             m_ConfigView = new UIRedDotConfigView(this);
             m_ConfigView.Initialize();
+            m_ShowView = new UIRedDotShowView(this);
+            m_ShowView.Initialize();
         }
 
         public override void OnDestroy()
         {
             m_KeyView.OnDestroy();
             m_ConfigView.OnDestroy();
+            m_ShowView.OnDestroy();
             AssetDatabase.SaveAssets();
         }
 
@@ -162,6 +188,36 @@ namespace YIUIFramework.Editor
 
         #endregion
 
+        #region Show
+
+        private void LoadRedDotShowAsset()
+        {
+            m_RedDotShowAsset = AssetDatabase.LoadAssetAtPath<RedDotShowAsset>(UIRedDotShowAssetPath);
+
+            if (m_RedDotShowAsset == null)
+            {
+                CreateRedDotShowAsset();
+            }
+
+            if (m_RedDotShowAsset == null)
+            {
+                Debug.LogError("没有找到 动态红点预制关联资源 且自动创建失败 请检查");
+            }
+        }
+
+        private void CreateRedDotShowAsset()
+        {
+            m_RedDotShowAsset = ScriptableObject.CreateInstance<RedDotShowAsset>();
+
+            var assetFolder = $"{Application.dataPath}/../{UIRedDotAssetFolderPath}";
+            if (!Directory.Exists(assetFolder))
+                Directory.CreateDirectory(assetFolder);
+
+            AssetDatabase.CreateAsset(m_RedDotShowAsset, UIRedDotShowAssetPath);
+        }
+
+        #endregion
+
         [HideLabel]
         internal enum EUIRedDotViewType
         {
@@ -170,6 +226,9 @@ namespace YIUIFramework.Editor
 
             [LabelText("配置 Config")]
             Config = 2,
+
+            [LabelText("红点动态预制关联")]
+            DynamicShow = 3,
         }
     }
 }

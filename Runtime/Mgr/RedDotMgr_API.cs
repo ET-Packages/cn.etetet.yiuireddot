@@ -9,6 +9,14 @@ namespace YIUIFramework
     public partial class RedDotMgr
     {
         /// <summary>
+        /// 判断是否存在
+        /// </summary>
+        public bool CheckRedDotKey(int key)
+        {
+            return m_AllRedDotData.ContainsKey(key);
+        }
+
+        /// <summary>
         /// 获取这个红点数据 
         /// </summary>
         public RedDotData GetData(int key)
@@ -57,6 +65,7 @@ namespace YIUIFramework
 
         /// <summary>
         /// 设置对应红点的数量
+        /// key = ERedDotKeyType 常量
         /// </summary>
         public bool SetCount(int key, int count)
         {
