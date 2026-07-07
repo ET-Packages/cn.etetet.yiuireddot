@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using UnityEngine.UI;
 using YIUIFramework;
 
@@ -12,16 +12,16 @@ namespace ET.Client
             IDynamicEvent<OnClickChildListEvent>,
             IDynamicEvent<OnClickItemEvent>
     {
-        public EntityRef<YIUILoopScrollChild> m_SearchScroll;
-        public YIUILoopScrollChild            SearchScroll => m_SearchScroll;
+        public EntityRef<YIUISuperScrollListComponent> m_SearchScroll;
+        public YIUISuperScrollListComponent            SearchScroll => m_SearchScroll;
 
         public List<RedDotData>              m_CurrentDataList      = new();
         public Dictionary<int, int>          m_AllDropdownSearchDic = new();
         public List<Dropdown.OptionData>     m_DropdownOptionData   = new();
         public RedDotData                    m_InfoData;
 
-        public EntityRef<YIUILoopScrollChild> m_StackScroll;
-        public YIUILoopScrollChild            StackScroll => m_StackScroll;
+        public EntityRef<YIUISuperScrollListComponent> m_StackScroll;
+        public YIUISuperScrollListComponent            StackScroll => m_StackScroll;
     }
 
     public struct OnClickParentListEvent

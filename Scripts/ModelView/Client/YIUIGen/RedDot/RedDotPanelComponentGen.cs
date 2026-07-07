@@ -22,10 +22,10 @@ namespace ET.Client
         public YIUIWindowComponent UIWindow => u_UIWindow;
         public EntityRef<YIUIPanelComponent> u_UIPanel;
         public YIUIPanelComponent UIPanel => u_UIPanel;
-        public UnityEngine.UI.LoopHorizontalScrollRect u_ComSearchScroll;
         public UnityEngine.UI.Dropdown u_ComDropdownSearch;
-        public UnityEngine.UI.LoopVerticalScrollRect u_ComStackScroll;
         public UnityEngine.UI.InputField u_ComInputChangeCount;
+        public SuperScrollView.LoopListView2 u_ComStackScrollLoopListView2;
+        public SuperScrollView.LoopListView2 u_ComSearchScrollLoopListView2;
         public YIUIFramework.UIDataValueBool u_DataDropdownSearch;
         public YIUIFramework.UIDataValueString u_DataInfoName;
         public YIUIFramework.UIDataValueBool u_DataToggleUnityEngine;

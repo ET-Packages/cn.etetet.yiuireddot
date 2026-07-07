@@ -17,7 +17,7 @@ namespace ET.Client
         {
             self.RemoveInfoChanged();
             self.InitInfo();
-            self.m_SearchScroll = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComSearchScroll, typeof(RedDotDataItemComponent));
+            self.m_SearchScroll = self.AddChild<YIUISuperScrollListComponent, SuperScrollView.LoopListView2>(self.u_ComSearchScrollLoopListView2);
             self.InitDropdownSearchDic();
         }
 
@@ -58,9 +58,9 @@ namespace ET.Client
         #region Search
 
         [EntitySystem]
-        private static void YIUILoopRenderer(this RedDotPanelComponent self, RedDotDataItemComponent item, RedDotData data, int index, bool select)
+        private static void YIUISuperScrollListRenderer(this RedDotPanelComponent self, RedDotDataItemComponent item, YIUISuperScrollListComponent superScrollList, int index, bool select)
         {
-            item.RefreshData(data);
+            item.RefreshData(self.m_CurrentDataList[index]);
         }
 
         private static void InitDropdownSearchDic(this RedDotPanelComponent self)
@@ -117,7 +117,7 @@ namespace ET.Client
 
         private static void RefreshSearchScroll(this RedDotPanelComponent self)
         {
-            self.SearchScroll.SetDataRefresh(self.m_CurrentDataList).NoContext();
+            self.SearchScroll.SetDataRefresh(self.m_CurrentDataList.Count);
         }
 
         private static void OnClickChildList(this RedDotPanelComponent self, RedDotData data)
@@ -146,7 +146,7 @@ namespace ET.Client
         {
             self.u_DataInfoName.SetValue("");
             self.u_ComInputChangeCount.text = "";
-            self.m_StackScroll = self.AddChild<YIUILoopScrollChild, LoopScrollRect, Type>(self.u_ComStackScroll, typeof(RedDotStackItemComponent));
+            self.m_StackScroll = self.AddChild<YIUISuperScrollListComponent, SuperScrollView.LoopListView2>(self.u_ComStackScrollLoopListView2);
             self.u_DataToggleUnityEngine.SetValue(RedDotStackHelper.StackHideUnityEngine);
             self.u_DataToggleYIUIFramework.SetValue(RedDotStackHelper.StackHideYIUIFramework);
             self.u_DataToggleYIUIBind.SetValue(RedDotStackHelper.StackHideYIUIBind);
@@ -156,9 +156,9 @@ namespace ET.Client
         }
 
         [EntitySystem]
-        private static void YIUILoopRenderer(this RedDotPanelComponent self, RedDotStackItemComponent item, RedDotStack data, int index, bool select)
+        private static void YIUISuperScrollListRenderer(this RedDotPanelComponent self, RedDotStackItemComponent item, YIUISuperScrollListComponent superScrollList, int index, bool select)
         {
-            item.RefreshData(data, self.m_InfoData);
+            item.RefreshData(self.m_InfoData.StackList[index], self.m_InfoData);
         }
 
         private static void ResetStackInfo(this RedDotPanelComponent self, RedDotData data)
@@ -196,7 +196,7 @@ namespace ET.Client
                 return;
             }
 
-            self.StackScroll.SetDataRefresh(self.m_InfoData.StackList).NoContext();
+            self.StackScroll.SetDataRefresh(self.m_InfoData.StackList.Count);
         }
 
         private static void OnInfoChangeCount(this RedDotPanelComponent self, int obj)

@@ -1,10 +1,10 @@
-﻿{
+{
   "name": "cn.etetet.yiuireddot",
   "displayName": "ET.YIUI.RedDot",
   "version": "3.0.0",
   "unity": "2022.3",
   "category": "UI/YIUI",
-  "description": "YIUI 红点 >>> 文档: https://lib9kmxvq7k.feishu.cn/wiki/ES7Gwz4EAiVGKSkotY5cRbTznuh",
+  "description": "YIUI \u7ea2\u70b9 >>> \u6587\u6863: https://lib9kmxvq7k.feishu.cn/wiki/ES7Gwz4EAiVGKSkotY5cRbTznuh",
   "author": {
     "name": "YIYI",
     "url": "https://github.com/LiShengYang-yiyi/YIUI/tree/YIUI-ET9.0"
@@ -15,7 +15,10 @@
   },
   "relatedPackages": {},
   "dependencies": {
-    "cn.etetet.core": "1.0.0"
+    "cn.etetet.core": "1.0.0",
+    "cn.etetet.yiuiframework": "3.1.4",
+    "cn.etetet.yiuisuperscroll": "0.0.1",
+    "cn.etetet.yiuigm": "0.0.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ET-Packages"
