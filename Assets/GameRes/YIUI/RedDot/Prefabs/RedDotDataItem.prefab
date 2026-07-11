@@ -2080,6 +2080,7 @@ GameObject:
   - component: {fileID: 6454334405356992599}
   - component: {fileID: 4416950232612014409}
   - component: {fileID: 5351742685167037341}
+  - component: {fileID: -3747982595227727937}
   m_Layer: 5
   m_Name: RedDotDataItem
   m_TagString: Untagged
@@ -3351,6 +3352,18 @@ MonoBehaviour:
       Entry: 8
       Data: 
   AllEventParamType: 
+--- !u!114 &-3747982595227727937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4471512010287411101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbcbd7952202d4d44a555aea5af2a351, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6137431625876746610
 GameObject:
   m_ObjectHideFlags: 0
